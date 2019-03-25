@@ -6,7 +6,7 @@
 
 A set of all known log and / or event data searches for threat hunting and  detection.  They enumerate sets of searches used across many different data pipelines. Implementation details are for ELK.
 
-###Contents
+### Contents
 
 Authentication - searches for authentication data sets hunting for brute force, credential compromise, credentialed persistence and session fixation / hijacking
 
