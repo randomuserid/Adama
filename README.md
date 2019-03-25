@@ -1,5 +1,30 @@
-# SpaceCake
-![Carrelon](/img/300px-HandofGod.jpg?raw=true "text")
+
+![things](/img/cylon.jpg?raw=true "text")
 # The SpaceCake Project
 
 ### Hunts, searches and alerts for for intrusion detection, security analytics and threat hunting using F/OSS (free and open source) tools
+
+A set of all known log and / or event data searches for threat hunting and  detection.  They enumerate sets of searches used across many different data pipelines. Implementation details are for ELK.
+
+###Contents
+
+Auth - searches for authentication data sets hunting for brute force, credential compromise, credentialed persistence and session fixation / hijacking
+
+Cloud  - searches for cloud and virtualization specific threats using API and cloud centric data
+
+Data Layer - searches for database monitoring and compromise
+
+Exfil - a list of known data exfiltration techniques and related searches 
+
+Linux - searches for threat hunting on Linux hosts
+
+MacOS -  searches for threat hunting on Linux hosts
+
+Network - searches for threat hunting using network data like IDS, proxy and flow events
+
+Webapp  - searches for detecting attacks on web servicers using web server logs
+
+Windows -  searches for threat hunting on Windows hosts
+
+Xplatform - general purpose searches for threat hunting on hosts. These behavioral detection techniques are relevant to Linux, MacOS and Windows hosts
+
