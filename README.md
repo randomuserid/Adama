@@ -8,23 +8,24 @@ A set of all known log and / or event data searches for threat hunting and  dete
 
 ###Contents
 
-Auth - searches for authentication data sets hunting for brute force, credential compromise, credentialed persistence and session fixation / hijacking
+Authentication - searches for authentication data sets hunting for brute force, credential compromise, credentialed persistence and session fixation / hijacking
 
-Cloud  - searches for cloud and virtualization specific threats using API and cloud centric data
+Cloud - searches for cloud and virtualization specific threats using API and cloud centric data
 
-Data Layer - searches for database monitoring and compromise
+Cross-platform - general purpose searches for threat hunting on hosts. These behavioral detection techniques are relevant to Linux, MacOS and Windows hosts
 
-Exfil - a list of known data exfiltration techniques and related searches 
+Database - searches for database monitoring and compromise
+
+Exfiltration - a list of known data exfiltration techniques and related searches 
 
 Linux - searches for threat hunting on Linux hosts
 
-MacOS -  searches for threat hunting on Linux hosts
+Mac -  searches for threat hunting on Linux hosts
 
 Network - searches for threat hunting using network data like IDS, proxy and flow events
 
-Webapp  - searches for detecting attacks on web servicers using web server logs
+Web  - searches for detecting attacks on web servicers using web server logs
 
 Windows -  searches for threat hunting on Windows hosts
 
-Xplatform - general purpose searches for threat hunting on hosts. These behavioral detection techniques are relevant to Linux, MacOS and Windows hosts
 
