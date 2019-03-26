@@ -1,5 +1,6 @@
+Searches for data exfiltration
+
 | Exfil | Anomalous AFP activity                   |
-|-------|------------------------------------------|
 | Exfil | Anomalous BGP activity                   |
 | Exfil | Anomalous BITS activity                  |
 | Exfil | Anomalous database port activity         |
@@ -44,7 +45,9 @@
 | Exfil | Gmail upload                             |
 | Exfil | Go2Meeting activity                      |
 | Exfil | Google photos                            |
+| Exfil | Google hangout                           |
 | Exfil | iCloud upload                            |
+| Exfil | imgur.com                                |
 | Exfil | Instagram                                |
 | Exfil | iodine activity                          |
 | Exfil | IRC activity                             |
@@ -91,3 +94,6 @@
 | Exfil | WinSCP                                   |
 | Exfil | Youtube                                  |
 | Exfil | Zoom                                     |
+| Exfil | SSH tunneling                            |
+| Exfil | Magic Wormhole                           |
+| Exfil | ZeroTier                                 |

@@ -1,8 +1,6 @@
-Web Application / Server Log searches
+Searches for attacks on web servers and applications using web service logs
 
 | Exploits                                                |  .htaccess access                                                                                   |
-|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Exploits                                                |  .htaccess requestr                                                                                 |
 | Exploits                                                |  /etc/shadow Detected in URI                                                                        |
 | Exploits                                                |  CRLF Injection - Newline Characters in URL - %0d%0a                                                |
 | Exploits                                                |  Exploit Suspected PHP Injection Attack (cmd=)                                                      |
@@ -646,16 +644,22 @@ Web Application / Server Log searches
 | Suspicious HTTP Request                                 |  ColdFusion administrator access                                                                    |
 | Suspicious HTTP Request                                 |  ColdFusion administrator access                                                                    |
 | Suspicious HTTP Request                                 |  ColdFusion componentutils access                                                                   |
+| Suspicious HTTP Request                                 |  Http pass= in cleartext                                                                            |
 | Suspicious HTTP Request                                 |  WEB-PHP phpinfo access                                                                             |
 | Suspicious HTTP Request                                 |  WEB-PHP phpinfo access                                                                             |
+| Suspicious HTTP Request                                 | Anomalous encoding in request                                                                       |
+| Suspicious HTTP Request                                 | Anomalous referrer                                                                                  |
 | Suspicious HTTP Request                                 | Asterix                                                                                             |
 | Suspicious HTTP Request                                 | Bugzilla                                                                                            |
 | Suspicious HTTP Request                                 | burp activity                                                                                       |
 | Suspicious HTTP Request                                 | CGI scripts                                                                                         |
+| Suspicious HTTP Request                                 | Cisco telephony service                                                                             |
 | Suspicious HTTP Request                                 | Citrix                                                                                              |
 | Suspicious HTTP Request                                 | Cold Fusion                                                                                         |
 | Suspicious HTTP Request                                 | denied by server configuration                                                                      |
 | Suspicious HTTP Request                                 | directory index forbidden                                                                           |
+| Suspicious HTTP Request                                 | Excessive use of a feature of method                                                                |
+| Suspicious HTTP Request                                 | extraclient access: unvalidated data in request                                                     |
 | Suspicious HTTP Request                                 | Flash activity                                                                                      |
 | Suspicious HTTP Request                                 | invalid URI "Invalid URI in request" or "URI too long" or "file name too long"                      |
 | Suspicious HTTP Request                                 | JSP                                                                                                 |
@@ -667,7 +671,12 @@ Web Application / Server Log searches
 | Suspicious HTTP Request                                 | long user agent strings                                                                             |
 | Suspicious HTTP Request                                 | Magento admin request                                                                               |
 | Suspicious HTTP Request                                 | mysqlmanager activity                                                                               |
+| Suspicious HTTP Request                                 | One time token reuse                                                                                |
+| Suspicious HTTP Request                                 | RDP request                                                                                         |
+| Suspicious HTTP Request                                 | Token use by different IP addresses                                                                 |
+| Suspicious HTTP Request                                 | Token use by different user agents                                                                  |
 | Suspicious HTTP Request                                 | Tomcat admin access                                                                                 |
+| Suspicious HTTP Request                                 | unauthorized response codes to scripted requests                                                    |
 | Suspicious HTTP Request                                 | Wordpress                                                                                           |
 | Suspicious HTTP Request                                 | YaBB activity                                                                                       |
 | Web Scanner                                             | .nasl                                                                                               |
@@ -766,4 +775,3 @@ Web Application / Server Log searches
 | Web Scanner                                             | zgrab                                                                                               |
 | Web Scanner                                             | zmeu                                                                                                |
 | Web Scanner                                             | ZmEu                                                                                                |
-| Web Suspicious Activity                                 |  Http pass= in cleartext                                                                            |
