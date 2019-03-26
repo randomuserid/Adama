@@ -1,7 +1,8 @@
-Data Layer
+Data layer searches for database threat activity
 
-| Behavioral              | anomalous database client activity                                                                                    |
+| Category                | Description                                                                                                           |
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| Behavioral              | anomalous database client activity                                                                                    |
 | Behavioral              | Anomalous database client activity                                                                                    |
 | Behavioral              | Anomalous process on database server                                                                                  |
 | Behavioral              | Anomalous SQL command activity                                                                                        |

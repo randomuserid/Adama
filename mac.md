@@ -1,35 +1,36 @@
 Mac searches
 
-| Malware | MacOS |  Backdoor Mokes                                   |
-|---------|-------|---------------------------------------------------|
-| Malware | MacOS |  Chrome extension                                 |
-| Malware | MacOS |  Chrome extension malware                         |
-| Malware | MacOS |  Coldroot RAT                                     |
-| Malware | MacOS |  Dummy malware                                    |
-| Malware | MacOS |  Firefox addon                                    |
-| Malware | MacOS |  HackingTeam Mac Persistence                      |
-| Malware | MacOS |  HackingTeam Mac RAT1                             |
-| Malware | MacOS |  HackingTeam Mac RAT2                             |
-| Malware | MacOS |  iWorm_1 malware                                  |
-| Malware | MacOS |  Keranger malware                                 |
-| Malware | MacOS |  Kernel extension                                 |
-| Malware | MacOS |  Kernel module                                    |
-| Malware | MacOS |  Komplex malware                                  |
-| Malware | MacOS |  Leverage-A_2 malware                             |
-| Malware | MacOS |  MaMi malware                                     |
-| Malware | MacOS |  OceanLotus malware                               |
-| Malware | MacOS |  OS Kernel module                                 |
-| Malware | MacOS |  OSX iWorkServ                                    |
-| Malware | MacOS |  OSX/Dok malware                                  |
-| Malware | MacOS |  Proton malware                                   |
-| Malware | MacOS |  Safari extension                                 |
-| Malware | MacOS |  Snake malware                                    |
-| Malware | MacOS |  USB device                                       |
-| Malware | MacOS | active device                                     |
-| Malware | MacOS | code signature failed                             |
-| Malware | MacOS | module insert                                     |
-| Process | MacOS | LaunchAgent activity                              |
-| Process | MacOS | LaunchDaemon activity                             |
-| Process | MacOS | signed launch agent / d; binary unsigned by Apple |
-| Process | MacOS | SIP evasion attempt                               |
-| Process | MacOS | unsigned launch agent / d                         |
+| Category | Description                                       | Data Source   |
+|----------|---------------------------------------------------|---------------|
+| Malware  |  Backdoor Mokes                                   | OSQuery       |
+| Malware  |  Chrome extension                                 | OSQuery       |
+| Malware  |  Chrome extension malware                         | OSQuery       |
+| Malware  |  Coldroot RAT                                     | OSQuery       |
+| Malware  |  Dummy malware                                    | OSQuery       |
+| Malware  |  Firefox addon                                    | OSQuery       |
+| Malware  |  HackingTeam Mac Persistence                      | OSQuery       |
+| Malware  |  HackingTeam Mac RAT1                             | OSQuery       |
+| Malware  |  HackingTeam Mac RAT2                             | OSQuery       |
+| Malware  |  iWorm_1 malware                                  | OSQuery       |
+| Malware  |  Keranger malware                                 | OSQuery       |
+| Malware  |  Kernel extension                                 | OSQuery       |
+| Malware  |  Kernel module                                    | OSQuery       |
+| Malware  |  Komplex malware                                  | OSQuery       |
+| Malware  |  Leverage-A_2 malware                             | OSQuery       |
+| Malware  |  MaMi malware                                     | OSQuery       |
+| Malware  |  OceanLotus malware                               | OSQuery       |
+| Malware  |  OS Kernel module                                 | OSQuery       |
+| Malware  |  OSX iWorkServ                                    | OSQuery       |
+| Malware  |  OSX/Dok malware                                  | OSQuery       |
+| Malware  |  Proton malware                                   | OSQuery       |
+| Malware  |  Safari extension                                 | OSQuery       |
+| Malware  |  Snake malware                                    | OSQuery       |
+| Malware  |  USB device                                       | OSQuery       |
+| Malware  | active device                                     | micro snitch  |
+| Malware  | code signature failed                             | little snitch |
+| Malware  | module insert                                     | BlockBlock    |
+| Process  | LaunchAgent activity                              | xnumon        |
+| Process  | LaunchDaemon activity                             | xnumon        |
+| Process  | signed launch agent / d; binary unsigned by Apple | xnumon        |
+| Process  | SIP evasion attempt                               | xnumon        |
+| Process  | unsigned launch agent / d                         | OSQuery       |
