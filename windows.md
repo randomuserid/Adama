@@ -2,24 +2,19 @@ Windows event searches - some use event logs and some need sysmon data
 
 | Event Type | Category                        | Description                                                                    |
 |------------|---------------------------------|--------------------------------------------------------------------------------|
-| Process    | Explotation                     | requests to sqm.microsoft.com                                                  |
-| Process    | Powershell                      | powershell connect outbound                                                    |
 | Files      | Collection                      | copy of directory files                                                        |
 | Files      | Persistence                     | Overwrite of C:\Windows\System32\sethc.exe with cmd.exe                        |
 | Files      | Persistence                     | System32 and SysWoW64 folder file creates                                      |
 | Logs       | Collection                      | RDP shadowing                                                                  |
 | Logs       | Persistence                     | Anomalous RDP login                                                            |
 | Logs       | Persistence                     | Anomalous Windows Management Instrumentation                                   |
-| Logs       | Persistence                     | Anomalous Windows Remote Management                                            |
 | Logs       | tbd                             | 3033 / 3063 lsass protection events                                            |
 | Logs       | tbd                             | 3033 / 3063 lsass protection events                                            |
-| Logs       | tbd                             | 3065 / 3066 Llsass auditing events                                             |
 | Logs       | tbd                             | 3065 / 3066 Llsass auditing events                                             |
 | Logs       | tbd                             | 4013 (powershell events)                                                       |
 | Logs       | tbd                             | 4648: using other’s creds - runas or impersonation                             |
 | Logs       | tbd                             | 4722 adding local admin                                                        |
 | Logs       | tbd                             | 4776 bad logins - kerberos                                                     |
-| Logs       | tbd                             | 4798 - user local group membership enumerated                                  |
 | Logs       | tbd                             | 4798 - user local group membership enumerated                                  |
 | Logs       | tbd                             | abnormal path                                                                  |
 | Logs       | tbd                             | AD: backdoor using service principal name                                      |
@@ -39,16 +34,14 @@ Windows event searches - some use event logs and some need sysmon data
 | Logs       | tbd                             | non-admin system configuration                                                 |
 | Logs       | tbd                             | scheduled task creation                                                        |
 | Logs       | tbd                             | Scheduled Task on DC                                                           |
-| Logs       | tbd                             | Scheduled Task on DC                                                           |
-| Logs       | tbd                             | Suspicious 4648 event                                                          |
 | Logs       | tbd                             | Suspicious 4648 event                                                          |
 | Logs       | tbd                             | Unhandled malware event - Left alone or Leave alone (log only)                 |
 | Logs       | tbd                             | windows defender detect                                                        |
 | Logs       | tbd                             | WMI activity                                                                   |
 | Logs       | tbd                             | WMI lateral movement                                                           |
-| Logs       | tbd                             | WMI lateral movement                                                           |
 | Logs       | tbd                             | zone transfer denied                                                           |
 | Logs       | tbd                             | zone transfer succeeded                                                        |
+| Logs       | tbd                             | Open network share created                                                     |
 | Powershell | Powershell                      | Powercat technique                                                             |
 | Powershell | Powershell                      | powershell base64 encoded script                                               |
 | Powershell | Powershell                      | Powershell Base64 Shellcode                                                    |
@@ -144,6 +137,7 @@ Windows event searches - some use event logs and some need sysmon data
 | Process    | Exploitation                    | File-less meterpreter activity                                                 |
 | Process    | Exploitation                    | metrepreter activity                                                           |
 | Process    | Exploitation                    | Obfuscated metasploit shellcode                                                |
+| Process    | Explotation                     | requests to sqm.microsoft.com                                                  |
 | Process    | Local Network Connections       | anomalous port 102 activity                                                    |
 | Process    | Local Network Connections       | anomalous port 110 activity                                                    |
 | Process    | Local Network Connections       | Anomalous port 123 activity                                                    |
@@ -174,6 +168,7 @@ Windows event searches - some use event logs and some need sysmon data
 | Process    | Persistence                     | psexec activity                                                                |
 | Process    | Persistence                     | SecureBoot tampering                                                           |
 | Process    | Persistence                     | web shell activity                                                             |
+| Process    | Powershell                      | powershell connect outbound                                                    |
 | Process    | Powershell                      | powershell started by office app                                               |
 | Process    | Powershell                      | process activity from downloads directory                                      |
 | Process    | Powershell                      | vbscript spawned by powershell                                                 |
