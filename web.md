@@ -1,6 +1,9 @@
 Searches for attacks on web servers and applications using web service logs
 
+| Category                                                | Description                                                                                         |
+|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Exploits                                                |  .htaccess access                                                                                   |
+| Exploits                                                |  .htaccess requestr                                                                                 |
 | Exploits                                                |  /etc/shadow Detected in URI                                                                        |
 | Exploits                                                |  CRLF Injection - Newline Characters in URL - %0d%0a                                                |
 | Exploits                                                |  Exploit Suspected PHP Injection Attack (cmd=)                                                      |

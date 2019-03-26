@@ -1,99 +1,101 @@
 Searches for data exfiltration
 
-| Exfil | Anomalous AFP activity                   |
-| Exfil | Anomalous BGP activity                   |
-| Exfil | Anomalous BITS activity                  |
-| Exfil | Anomalous database port activity         |
-| Exfil | Anomalous DNS Outbound                   |
-| Exfil | Anomalous DNS Traffic                    |
-| Exfil | Anomalous FTP activity                   |
-| Exfil | Anomalous HTTP activity                  |
-| Exfil | Anomalous ICMP Outbound                  |
-| Exfil | Anomalous IMAP Outbound                  |
-| Exfil | Anomalous NFS activity                   |
-| Exfil | Anomalous POP3 Outbound                  |
-| Exfil | Anomalous RDP Outbound                   |
-| Exfil | Anomalous rsynch activity                |
-| Exfil | Anomalous SCP Outbound                   |
-| Exfil | Anomalous SMB / CIFS activity            |
-| Exfil | Anomalous SMTP Outbound                  |
-| Exfil | Anomalous SSH Outbound                   |
-| Exfil | Anomalous TFTP Outbound                  |
-| Exfil | Anomalous UDP  activity                  |
-| Exfil | Anomalous webDAV Outbound                |
-| Exfil | Anomalous whois activity                 |
-| Exfil | Bandcamp                                 |
-| Exfil | Bitbucket                                |
-| Exfil | Box.com                                  |
-| Exfil | Chat activity                            |
-| Exfil | Data intesive outbound web activity      |
-| Exfil | DigitalOcean Spaces                      |
-| Exfil | Dropbox                                  |
-| Exfil | DynamoDB ETL                             |
-| Exfil | echo command activity                    |
-| Exfil | ElastiCache                              |
-| Exfil | Facebook Messenger                       |
-| Exfil | Facebook photos                          |
-| Exfil | FileZilla                                |
-| Exfil | Firebase                                 |
-| Exfil | Flickr                                   |
-| Exfil | ftp command activity                     |
-| Exfil | GCP SQL ETL                              |
-| Exfil | GCP Storage uplaod                       |
-| Exfil | GDrive upload                            |
-| Exfil | Github                                   |
-| Exfil | Gmail upload                             |
-| Exfil | Go2Meeting activity                      |
-| Exfil | Google photos                            |
-| Exfil | Google hangout                           |
-| Exfil | iCloud upload                            |
-| Exfil | imgur.com                                |
-| Exfil | Instagram                                |
-| Exfil | iodine activity                          |
-| Exfil | IRC activity                             |
-| Exfil | large outbound byte count                |
-| Exfil | large outbound byte count                |
-| Exfil | Local Directory                          |
-| Exfil | Long flows                               |
-| Exfil | long outbound connection                 |
-| Exfil | long outbound connection                 |
-| Exfil | Mailslots                                |
-| Exfil | MSSQL ETL                                |
-| Exfil | MySQL ETL                                |
-| Exfil | net use command activity                 |
-| Exfil | Netcat data transfer                     |
-| Exfil | OneDrive upload                          |
-| Exfil | Outbound data geometry                   |
-| Exfil | password protected archive file outbound |
-| Exfil | PasteBin                                 |
-| Exfil | PCAnywhere activity                      |
-| Exfil | Peer-to-Peer activity                    |
-| Exfil | Postgresql synch                         |
-| Exfil | Rapidshare activity                      |
-| Exfil | RDS ETL                                  |
-| Exfil | Reddit                                   |
-| Exfil | Redis                                    |
-| Exfil | rsynch                                   |
-| Exfil | S3 upload                                |
-| Exfil | SCP command activity                     |
-| Exfil | Sharefile                                |
-| Exfil | Sharepoint upload                        |
-| Exfil | Skype upload                             |
-| Exfil | Slack                                    |
-| Exfil | smb command activity                     |
-| Exfil | Snapchat                                 |
-| Exfil | Social media activity from a non-browser |
-| Exfil | Soundcloud                               |
-| Exfil | SQS messaging                            |
-| Exfil | TeamViewer activity                      |
-| Exfil | Torrent activity                         |
-| Exfil | Twitter post                             |
-| Exfil | VNC Activity                             |
-| Exfil | Web based file transfer activity         |
-| Exfil | Webex                                    |
-| Exfil | WinSCP                                   |
-| Exfil | Youtube                                  |
-| Exfil | Zoom                                     |
-| Exfil | SSH tunneling                            |
-| Exfil | Magic Wormhole                           |
-| Exfil | ZeroTier                                 |
+| Description                              |
+|------------------------------------------|
+| Anomalous AFP activity                   |
+| Anomalous BGP activity                   |
+| Anomalous BITS activity                  |
+| Anomalous database port activity         |
+| Anomalous DNS Outbound                   |
+| Anomalous DNS Traffic                    |
+| Anomalous FTP activity                   |
+| Anomalous HTTP activity                  |
+| Anomalous ICMP Outbound                  |
+| Anomalous IMAP Outbound                  |
+| Anomalous NFS activity                   |
+| Anomalous POP3 Outbound                  |
+| Anomalous RDP Outbound                   |
+| Anomalous rsynch activity                |
+| Anomalous SCP Outbound                   |
+| Anomalous SMB / CIFS activity            |
+| Anomalous SMTP Outbound                  |
+| Anomalous SSH Outbound                   |
+| Anomalous TFTP Outbound                  |
+| Anomalous UDP  activity                  |
+| Anomalous webDAV Outbound                |
+| Anomalous whois activity                 |
+| Bandcamp                                 |
+| Bitbucket                                |
+| Box.com                                  |
+| Chat activity                            |
+| Data intesive outbound web activity      |
+| DigitalOcean Spaces                      |
+| Dropbox                                  |
+| DynamoDB ETL                             |
+| echo command activity                    |
+| ElastiCache                              |
+| Facebook Messenger                       |
+| Facebook photos                          |
+| FileZilla                                |
+| Firebase                                 |
+| Flickr                                   |
+| ftp command activity                     |
+| GCP SQL ETL                              |
+| GCP Storage uplaod                       |
+| GDrive upload                            |
+| Github                                   |
+| Gmail upload                             |
+| Go2Meeting activity                      |
+| Google photos                            |
+| Google hangout                           |
+| iCloud upload                            |
+| imgur.com                                |
+| Instagram                                |
+| iodine activity                          |
+| IRC activity                             |
+| large outbound byte count                |
+| large outbound byte count                |
+| Local Directory                          |
+| Long flows                               |
+| long outbound connection                 |
+| long outbound connection                 |
+| Mailslots                                |
+| MSSQL ETL                                |
+| MySQL ETL                                |
+| net use command activity                 |
+| Netcat data transfer                     |
+| OneDrive upload                          |
+| Outbound data geometry                   |
+| password protected archive file outbound |
+| PasteBin                                 |
+| PCAnywhere activity                      |
+| Peer-to-Peer activity                    |
+| Postgresql synch                         |
+| Rapidshare activity                      |
+| RDS ETL                                  |
+| Reddit                                   |
+| Redis                                    |
+| rsynch                                   |
+| S3 upload                                |
+| SCP command activity                     |
+| Sharefile                                |
+| Sharepoint upload                        |
+| Skype upload                             |
+| Slack                                    |
+| smb command activity                     |
+| Snapchat                                 |
+| Social media activity from a non-browser |
+| Soundcloud                               |
+| SQS messaging                            |
+| TeamViewer activity                      |
+| Torrent activity                         |
+| Twitter post                             |
+| VNC Activity                             |
+| Web based file transfer activity         |
+| Webex                                    |
+| WinSCP                                   |
+| Youtube                                  |
+| Zoom                                     |
+| SSH tunneling                            |
+| Magic Wormhole                           |
+| ZeroTier                                 |
