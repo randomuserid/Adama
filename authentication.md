@@ -1,5 +1,7 @@
 Authentication - searches for credentialed persistence and unauthorized access
 
+| Category            | Description                                                   |
+|---------------------|---------------------------------------------------------------|
 | Brute Force         | distributed brute force                                       |
 | Brute Force         | numerous failed auth, multiple hosts                          |
 | Brute Force         | numerous failed auth, multiple sources                        |
