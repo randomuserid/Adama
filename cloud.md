@@ -1,7 +1,8 @@
-Cloud
+Searches using Cloud API and log event data
 
-| Anomalous inter-cloud traffic | Akamai                                                                                                      |
+| Category                      | Description                                                                                                 |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------|
+| Anomalous inter-cloud traffic | Akamai                                                                                                      |
 | Anomalous inter-cloud traffic | Azure                                                                                                       |
 | Anomalous inter-cloud traffic | BlockDOS                                                                                                    |
 | Anomalous inter-cloud traffic | BlueHost                                                                                                    |
@@ -72,7 +73,7 @@ Cloud
 | API Events                    | Interesting config alert                                                                                    |
 | API Events                    | Interesting guardduty alert                                                                                 |
 | API Events                    | Internal IAM credentials used from external sources                                                         |
-| API Events                    | new instance launched in service vpc                                                                        |
+| API Events                    | New instance launched in service vpc                                                                        |
 | API Events                    | Pacu activity                                                                                               |
 | API Events                    | Passing a role to a Glue Development Endpoint                                                               |
 | API Events                    | Passing a role to CloudFormation                                                                            |
@@ -96,7 +97,6 @@ Cloud
 | Auth                          | Root account usage, anomalous                                                                               |
 | Auth                          | Root account usage, remote                                                                                  |
 | Auth                          | Simultaneous API access from different countries                                                            |
-| Auth                          |                                                                                                             |
 | Containers & Virtualization   | /etc/passwd or /etc/shadow activity                                                                         |
 | Containers & Virtualization   | anomalous activity by a container host                                                                      |
 | Containers & Virtualization   | anomalous activity by hypervisor process                                                                    |
@@ -116,6 +116,8 @@ Cloud
 | Containers & Virtualization   | Staaldraad                                                                                                  |
 | Containers & Virtualization   | suspicious container change                                                                                 |
 | Containers & Virtualization   | suspicious container creation                                                                               |
+| Containers & Virtualization   | etcd access from the Internet                                                                               |
+| Containers & Virtualization   | Manual container instantiation                                                                              |
 | Correlations                  | AssumedRole compromise                                                                                      |
 | Correlations                  | Connection from a foreign Ec2 instance                                                                      |
 | Correlations                  | Connection from a foreign workload                                                                          |
