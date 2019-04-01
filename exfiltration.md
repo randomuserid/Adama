@@ -46,8 +46,8 @@ Searches for data exfiltration
 | Github                                   |
 | Gmail upload                             |
 | Go2Meeting activity                      |
-| Google photos                            |
 | Google hangout                           |
+| Google photos                            |
 | iCloud upload                            |
 | imgur.com                                |
 | Instagram                                |
@@ -59,6 +59,7 @@ Searches for data exfiltration
 | Long flows                               |
 | long outbound connection                 |
 | long outbound connection                 |
+| Magic Wormhole                           |
 | Mailslots                                |
 | MSSQL ETL                                |
 | MySQL ETL                                |
@@ -76,6 +77,7 @@ Searches for data exfiltration
 | Reddit                                   |
 | Redis                                    |
 | rsynch                                   |
+| Russian VKontakte social media site      |
 | S3 upload                                |
 | SCP command activity                     |
 | Sharefile                                |
@@ -87,6 +89,7 @@ Searches for data exfiltration
 | Social media activity from a non-browser |
 | Soundcloud                               |
 | SQS messaging                            |
+| SSH tunneling                            |
 | TeamViewer activity                      |
 | Torrent activity                         |
 | Twitter post                             |
@@ -94,8 +97,7 @@ Searches for data exfiltration
 | Web based file transfer activity         |
 | Webex                                    |
 | WinSCP                                   |
+| Yahoo Mail                               |
 | Youtube                                  |
-| Zoom                                     |
-| SSH tunneling                            |
-| Magic Wormhole                           |
 | ZeroTier                                 |
+| Zoom                                     |

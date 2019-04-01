@@ -33,12 +33,14 @@ Searches for attacks on web servers and applications using web service logs
 | Exploits                                                | process activity in web requests                                                                    |
 | Exploits                                                | Remote Command Injection                                                                            |
 | Exploits                                                | rm or rm -rf activity                                                                               |
+| Exploits                                                | Script interpreter user agent                                                                       |
 | Exploits                                                | server side template injection                                                                      |
 | Exploits                                                | shell commands in web request                                                                       |
 | Exploits                                                | shell_exec in web request                                                                           |
 | Exploits                                                | SQL injection - insert,from,select,union,where - with or without %20                                |
 | Exploits                                                | SQL statements in URIs                                                                              |
 | Exploits                                                | Suspicious user agents                                                                              |
+| Exploits                                                | ThinkPHP getShell RCI                                                                               |
 | Exploits                                                | WAF alert                                                                                           |
 | Exploits                                                | WAF deny                                                                                            |
 | Exploits                                                | web shells                                                                                          |
@@ -57,7 +59,9 @@ Searches for attacks on web servers and applications using web service logs
 | Exploits - SQL Injection                                | %20WHERE AND %20SELECT%\\                                                                           |
 | Exploits - SQL Injection                                | +union+select+                                                                                      |
 | Exploits - SQL Injection                                | Attempt to Get SQL Server Version in URI using SELECT VERSION                                       |
+| Exploits - SQL Injection                                | DECLARE%20                                                                                          |
 | Exploits - SQL Injection                                | Possible SQL Injection Attempt SELECT FROM                                                          |
+| Exploits - SQL Injection                                | SET%20                                                                                              |
 | Exploits - SQL Injection - Windows                      | (select @@version)                                                                                  |
 | Exploits - SQL Injection - Windows                      | (select system_user)                                                                                |
 | Exploits - SQL Injection - Windows                      | Auth mode query                                                                                     |
@@ -105,6 +109,7 @@ Searches for attacks on web servers and applications using web service logs
 | Exploits - XSS                                          | </script><script>alert(WILDCARD);</script>                                                          |
 | Exploits - XSS                                          | </script><script>alert('WILDCARD');</script>                                                        |
 | Exploits - XSS                                          | <\script>alert(document.domain)</script>                                                            |
+| Exploits - XSS                                          | <script>*</script>                                                                                  |
 | Exploits - XSS                                          | <script>alert("WILDCARD");</script>                                                                 |
 | Exploits - XSS                                          | <script>alert("WILDCARD")</script                                                                   |
 | Exploits - XSS                                          | <script>alert()</script>                                                                            |
@@ -138,17 +143,19 @@ Searches for attacks on web servers and applications using web service logs
 | Exploits - XSS                                          | <script>alert(WILDCARD)</script><!--                                                                |
 | Exploits - XSS                                          | <script>alert(WILDCARD)</script></h1>                                                               |
 | Exploits - XSS                                          | <script>alert(WILDCARD)</script><a%20href=                                                          |
+| Exploits - XSS                                          | <script>alert*</script>                                                                             |
 | Exploits - XSS                                          | <Script>javascript:alert(document.cookie)</Script>                                                  |
 | Exploits - XSS                                          | ><script>alert("WILDCARD")%3B<%2Fscript>&volume="%2F><script>alert("WILDCARD")%3B<%2Fscript>#       |
 | Exploits - XSS                                          | ><script>alert(/WILDCARD/);</script>                                                                |
 | Exploits - XSS                                          | 3Cscript%3Ealert(document.cookie)%3C%2Fscript%3E&t_id=2                                             |
 | Exploits - XSS                                          | cgi?file=%3Cscript%3Ealert(%22WILDCARD%22)%3C/script%3E%00                                          |
 | Exploits - XSS                                          | E%3Cscript%3Ealert(WILDCARD)%3C/script%3E                                                           |
+| Exploits - XSS                                          | onerror=alert%281%29%3E                                                                             |
+| Exploits - XSS                                          | onerror=alert(1)%3E                                                                                 |
+| Exploits - XSS                                          | onerror=alert(1)>                                                                                   |
 | Exploits - XSS                                          | script>alert(document.domain)</script>                                                              |
 | Exploits - XSS                                          | WordPress 2 Click Social Media Buttons plugin xing-url parameter XSS                                |
 | Exploits - XSS                                          | WP Jetpack Twenty Fifteen XSS                                                                       |
-| Exploits - XSS                                          |                                                                                                     |
-| Exploits - XSS                                          |                                                                                                     |
 | OSSEC                                                   | PHP Attack                                                                                          |
 | OSSEC                                                   | XSS                                                                                                 |
 | PHP                                                     | PHP net utils                                                                                       |
@@ -652,6 +659,7 @@ Searches for attacks on web servers and applications using web service logs
 | Suspicious HTTP Request                                 |  WEB-PHP phpinfo access                                                                             |
 | Suspicious HTTP Request                                 | Anomalous encoding in request                                                                       |
 | Suspicious HTTP Request                                 | Anomalous referrer                                                                                  |
+| Suspicious HTTP Request                                 | anonymizer activity                                                                                 |
 | Suspicious HTTP Request                                 | Asterix                                                                                             |
 | Suspicious HTTP Request                                 | Bugzilla                                                                                            |
 | Suspicious HTTP Request                                 | burp activity                                                                                       |
@@ -673,6 +681,7 @@ Searches for attacks on web servers and applications using web service logs
 | Suspicious HTTP Request                                 | long URIs with null referrers                                                                       |
 | Suspicious HTTP Request                                 | long user agent strings                                                                             |
 | Suspicious HTTP Request                                 | Magento admin request                                                                               |
+| Suspicious HTTP Request                                 | metadata request                                                                                    |
 | Suspicious HTTP Request                                 | mysqlmanager activity                                                                               |
 | Suspicious HTTP Request                                 | One time token reuse                                                                                |
 | Suspicious HTTP Request                                 | RDP request                                                                                         |
@@ -680,6 +689,10 @@ Searches for attacks on web servers and applications using web service logs
 | Suspicious HTTP Request                                 | Token use by different user agents                                                                  |
 | Suspicious HTTP Request                                 | Tomcat admin access                                                                                 |
 | Suspicious HTTP Request                                 | unauthorized response codes to scripted requests                                                    |
+| Suspicious HTTP Request                                 | URI contains ephemeral port                                                                         |
+| Suspicious HTTP Request                                 | URI contains jsesssionid=                                                                           |
+| Suspicious HTTP Request                                 | URI contains password or pass string                                                                |
+| Suspicious HTTP Request                                 | URI contains username string                                                                        |
 | Suspicious HTTP Request                                 | Wordpress                                                                                           |
 | Suspicious HTTP Request                                 | YaBB activity                                                                                       |
 | Web Scanner                                             | .nasl                                                                                               |
