@@ -695,6 +695,7 @@ Searches for attacks on web servers and applications using web service logs
 | Suspicious HTTP Request                                 | URI contains username string                                                                        |
 | Suspicious HTTP Request                                 | Wordpress                                                                                           |
 | Suspicious HTTP Request                                 | YaBB activity                                                                                       |
+| Suspicious HTTP Request                                 | DPRK / APT37 user agent                                                                             |
 | Web Scanner                                             | .nasl                                                                                               |
 | Web Scanner                                             | absinthe                                                                                            |
 | Web Scanner                                             | advanced email extractor                                                                            |

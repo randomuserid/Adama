@@ -118,3 +118,4 @@ Network data searches
 | Proxy       | Proxy event containing file extension                                |
 | Proxy       | web based file transfer activity                                     |
 | Proxy       | web traffic, suspicious user agent                                   |
+| Proxy       | DPRK / APT37 user agent                                              |
