@@ -1,10 +1,10 @@
 
 ![things](/img/adama-cic-2.jpg?raw=true "text")
-# The SpaceCake Project
+# Adama
 
-### Hunts, searches and alerts for for intrusion detection, security analytics and threat hunting using F/OSS (free and open source) tools
+### Searches For Threat Hunting and Security Analytics
 
-A set of all known log and / or event data searches for threat hunting and  detection.  They enumerate sets of searches used across many different data pipelines. Implementation details are for ELK.
+A set of all known log and / or event data searches for threat hunting and  detection.  They enumerate sets of searches used across many different data pipelines. Implementation details are for ELK. Adama is part of the SpaceCake project which is a set of hunts, searches, alerts, visualizations and data pipelines for for intrusion detection, security analytics and threat hunting using F/OSS (free and open source) tools
 
 ### Contents
 
