@@ -1,5 +1,5 @@
 
-![things](/img/adama-cic.jpg?raw=true "text")
+![things](/img/adama-cic-2.jpg?raw=true "text")
 # The SpaceCake Project
 
 ### Hunts, searches and alerts for for intrusion detection, security analytics and threat hunting using F/OSS (free and open source) tools
