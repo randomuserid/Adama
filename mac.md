@@ -1,36 +1,43 @@
-Mac searches
+MacOS Searches and Hunts
 
-| Category | Description                                       | Data Source   |
-|----------|---------------------------------------------------|---------------|
-| Malware  |  Backdoor Mokes                                   | OSQuery       |
-| Malware  |  Chrome extension                                 | OSQuery       |
-| Malware  |  Chrome extension malware                         | OSQuery       |
-| Malware  |  Coldroot RAT                                     | OSQuery       |
-| Malware  |  Dummy malware                                    | OSQuery       |
-| Malware  |  Firefox addon                                    | OSQuery       |
-| Malware  |  HackingTeam Mac Persistence                      | OSQuery       |
-| Malware  |  HackingTeam Mac RAT1                             | OSQuery       |
-| Malware  |  HackingTeam Mac RAT2                             | OSQuery       |
-| Malware  |  iWorm_1 malware                                  | OSQuery       |
-| Malware  |  Keranger malware                                 | OSQuery       |
-| Malware  |  Kernel extension                                 | OSQuery       |
-| Malware  |  Kernel module                                    | OSQuery       |
-| Malware  |  Komplex malware                                  | OSQuery       |
-| Malware  |  Leverage-A_2 malware                             | OSQuery       |
-| Malware  |  MaMi malware                                     | OSQuery       |
-| Malware  |  OceanLotus malware                               | OSQuery       |
-| Malware  |  OS Kernel module                                 | OSQuery       |
-| Malware  |  OSX iWorkServ                                    | OSQuery       |
-| Malware  |  OSX/Dok malware                                  | OSQuery       |
-| Malware  |  Proton malware                                   | OSQuery       |
-| Malware  |  Safari extension                                 | OSQuery       |
-| Malware  |  Snake malware                                    | OSQuery       |
-| Malware  |  USB device                                       | OSQuery       |
-| Malware  | active device                                     | micro snitch  |
-| Malware  | code signature failed                             | little snitch |
-| Malware  | module insert                                     | BlockBlock    |
-| Process  | LaunchAgent activity                              | xnumon        |
-| Process  | LaunchDaemon activity                             | xnumon        |
-| Process  | signed launch agent / d; binary unsigned by Apple | xnumon        |
-| Process  | SIP evasion attempt                               | xnumon        |
-| Process  | unsigned launch agent / d                         | OSQuery       |
+| Category             | Description                                       | Data Source   |
+|----------------------|---------------------------------------------------|---------------|
+| Persistence          |  Backdoor Mokes                                   | OSQuery       |
+| Behavioral Detection |  Chrome extension                                 | OSQuery       |
+| Persistence          |  Chrome extension malware                         | OSQuery       |
+| Persistence          |  Coldroot RAT                                     | OSQuery       |
+| Persistence          |  Dummy malware                                    | OSQuery       |
+| Behavioral Detection |  Firefox addon                                    | OSQuery       |
+| Persistence          |  HackingTeam Mac Persistence                      | OSQuery       |
+| Persistence          |  HackingTeam Mac RAT1                             | OSQuery       |
+| Persistence          |  HackingTeam Mac RAT2                             | OSQuery       |
+| Persistence          |  iWorm_1 malware                                  | OSQuery       |
+| Persistence          |  Keranger malware                                 | OSQuery       |
+| Behavioral Detection |  Kernel extension                                 | OSQuery       |
+| Behavioral Detection |  Kernel module                                    | OSQuery       |
+| Persistence          |  Komplex malware                                  | OSQuery       |
+| Persistence          |  Leverage-A_2 malware                             | OSQuery       |
+| Persistence          |  MaMi malware                                     | OSQuery       |
+| Persistence          |  OceanLotus malware                               | OSQuery       |
+| Persistence          |  OS Kernel module                                 | OSQuery       |
+| Persistence          |  OSX iWorkServ                                    | OSQuery       |
+| Persistence          |  OSX/Dok malware                                  | OSQuery       |
+| Persistence          |  Proton malware                                   | OSQuery       |
+| Persistence          |  Safari extension                                 | OSQuery       |
+| Persistence          |  Snake malware                                    | OSQuery       |
+| Behavioral Detection |  USB device                                       | OSQuery       |
+| Behavioral Detection | active device                                     | micro snitch  |
+| Behavioral Detection | code signature failed                             | little snitch |
+| Behavioral Detection | module insert                                     | BlockBlock    |
+| Behavioral Detection | LaunchAgent activity                              | xnumon        |
+| Behavioral Detection | LaunchDaemon activity                             | xnumon        |
+| Behavioral Detection | signed launch agent / d; binary unsigned by Apple | xnumon        |
+| Behavioral Detection | SIP evasion attempt                               | xnumon        |
+| Behavioral Detection | unsigned launch agent / d                         | OSQuery       |
+| Persistence          | Launch Agent                                      | xnumon        |
+| Persistence          | Launch Daemon                                     | xnumon        |
+| Credential Access    | Event Tap                                         | xnumon        |
+| Persistence          | Cron Job                                          | xnumon        |
+| Persistence          | Login Item                                        | xnumon        |
+| Persistence          | OSX.WindTail                                      | xnumon        |
+| Persistence          | OSX.AppleJeus                                     | xnumon        |
