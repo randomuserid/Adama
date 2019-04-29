@@ -1,31 +1,31 @@
 Data layer searches for database threat activity
 
-| Category                | Description                                                                            |
-|-------------------------|----------------------------------------------------------------------------------------|
-| Behavioral              | anomalous database client activity                                                     |
-| Behavioral              | Anomalous database client activity                                                     |
-| Behavioral              | Anomalous process on database server                                                   |
-| Behavioral              | Anomalous SQL command activity                                                         |
-| Behavioral              | anomalous SQL sessions                                                                 |
-| Behavioral              | authorization failures                                                                 |
-| Behavioral              | Shell commands by database server process                                              |
-| Behavioral              | Shell commands by database server user context                                         |
-| Collection              | database dump                                                                          |
-| Collection              | database query written to a text file                                                  |
-| Behavioral Detection    | selects of honeytokens - false records with high value created to attract data thieves |
-| Initial Access          | Anomalous database logins                                                              |
-| mySQL Linux execution   | CREATE FUNCTION * "*.so"*                                                              |
-| mySQL Linux execution   | mySQL downloads                                                                        |
-| mySQL Linux execution   | SELECT * *.so                                                                          |
-| mySQL Linux execution   | SELECT * ./* *                                                                         |
-| mySQL Linux execution   | SELECT * curl*                                                                         |
-| mySQL Linux execution   | SELECT * http*                                                                         |
-| mySQL Linux execution   | SELECT * wget*                                                                         |
-| mySQL Windows execution | CREATE * '*.dll'                                                                       |
-| mySQL Windows execution | SELECT *'*.exe'                                                                        |
-| mySQL Windows execution | SET * *.dll                                                                            |
-| Network                 | database connection from the Internet                                                  |
-| Network                 | elasticsearch connection from the internet                                             |
-| Persistence             | schema and configuration changes from remote hosts                                     |
-| Behavioral Detection    | Suspicious query rates                                                                 |
-| Behavioral Detection    | Honeytoken access                                                                      |
+| Event Type     | Category             | Search Name                                        |
+|----------------|----------------------|----------------------------------------------------|
+| Process Create | Behavioral Detection | Behavioral Detection                               |
+| Process Create | Behavioral Detection | Behavioral Detection                               |
+| Process Create | Behavioral Detection | Anomalous process on database server               |
+| Process Create | Behavioral Detection | Anomalous SQL command activity                     |
+| Database Logs  | Behavioral Detection | anomalous SQL sessions                             |
+| Database Logs  | Behavioral Detection | authorization failures                             |
+| Process Create | Behavioral Detection | Shell commands by database server process          |
+| Process Create | Behavioral Detection | Shell commands by database server user context     |
+| Process Create | Collection           | database dump                                      |
+| Process Create | Collection           | database query written to a text file              |
+| Database Logs  | Behavioral Detection | Selects of honeytokens                             |
+| Database Logs  | Initial Access       | Anomalous database logins                          |
+| Database Logs  | Execution            | mySQL Linux execution - so                         |
+| Database Logs  | Execution            | mySQL Linux execution - download                   |
+| Database Logs  | Execution            | mySQL Linux execution - so 2                       |
+| Database Logs  | Execution            | mySQL Linux execution - /                          |
+| Database Logs  | Execution            | mySQL Linux execution  - curl                      |
+| Database Logs  | Execution            | mySQL Linux execution - http                       |
+| Database Logs  | Execution            | mySQL Linux execution - wget                       |
+| Database Logs  | Execution            | mySQL Windows execution - dll                      |
+| Database Logs  | Execution            | mySQL Windows execution - exe                      |
+| Database Logs  | Execution            | mySQL Windows execution dll 2                      |
+| Database Logs  | Behavioral Detection | database connection from the Internet              |
+| Database Logs  | Behavioral Detection | elasticsearch connection from the internet         |
+| Database Logs  | Behavioral Detection | schema and configuration changes from remote hosts |
+| Database Logs  | Behavioral Detection | Suspicious query rates                             |
+| Database Logs  | Behavioral Detection | Honeytoken access                                  |

@@ -1,65 +1,63 @@
 Authentication - searches for credentialed persistence and unauthorized access
 
-| Category            | Description                                                   |
-|---------------------|---------------------------------------------------------------|
-| Brute Force         | distributed brute force                                       |
-| Brute Force         | numerous failed auth, multiple hosts                          |
-| Brute Force         | numerous failed auth, multiple sources                        |
-| Brute Force         | numerous failed auth, multiple targets                        |
-| Brute Force         | numerous failed auth, single host                             |
-| Brute Force         | successful brute force                                        |
-| Credentialed Access |  anomalous changed group                                      |
-| Credentialed Access |  anomalous changed user                                       |
-| Credentialed Access |  anomalous delete group                                       |
-| Credentialed Access |  anomalous delete user                                        |
-| Credentialed Access |  anomalous new group                                          |
-| Credentialed Access |  anomalous new user                                           |
-| Credentialed Access | anomalous authentication - geography                          |
-| Credentialed Access | anomalous authentication - no 2FA                             |
-| Credentialed Access | anomalous authentication - source CIDR                        |
-| Credentialed Access | auth fail spike                                               |
-| Credentialed Access | default accounts                                              |
-| Credentialed Access | default key usage                                             |
-| Credentialed Access | disabled account                                              |
-| Credentialed Access | expired account                                               |
-| Credentialed Access | first login by a user                                         |
-| Credentialed Access | inactive account                                              |
-| Credentialed Access | overnight auth                                                |
-| Credentialed Access | Remote root / admin login                                     |
-| Credentialed Access | successful auth preceded by scan                              |
-| Credentialed Access | Successful auth, anomalous user context                       |
-| Credentialed Access | successful auth, remote source                                |
-| Credentialed Access | weekend auth                                                  |
-| Multi-tenancy       | Access to multiple organizations from one IP address          |
-| Multi-tenancy       | Access to multiple organizations from one user context        |
-| Multi-tenancy       | Anomalous management user access                              |
-| Multi-tenancy       | Anomalous management user access                              |
-| Multi-tenancy       | Anomalous management user creation                            |
-| Multi-tenancy       | Anomalous management user creation                            |
-| Multi-tenancy       | Anomalous management user login                               |
-| Multi-tenancy       | Anomalous organization admin access                           |
-| Multi-tenancy       | Anomalous organization admin access                           |
-| Multi-tenancy       | Anomalous organization admin creation                         |
-| Multi-tenancy       | Anomalous organization admin creation                         |
-| Multi-tenancy       | Anomalous organization admin login                            |
-| Multi-tenancy       | Consumer organization user accessing management method        |
-| Multi-tenancy       | Consumer organization user accessing management organization  |
-| Multi-tenancy       | Management access from a consumer organization environment    |
-| Multi-tenancy       | Organization / user context mismatch                          |
-| Multi-tenancy       | Organization access from a different organization environment |
-| Multi-tenancy       | Same action in multiple organizations in a short time         |
-| Sesion Fixation     | authentication by user on PTO                                 |
-| Sesion Fixation     | group change from anomalous source                            |
-| Sesion Fixation     | One time token reuse                                          |
-| Sesion Fixation     | privlieged user auth, new relationship                        |
-| Sesion Fixation     | same user, different countries                                |
-| Sesion Fixation     | same user, different countries, for more than one day         |
-| Sesion Fixation     | same user, diffrerent Ips                                     |
-| Sesion Fixation     | Token use by different IP addresses                           |
-| Sesion Fixation     | Token use by different user agents                            |
-| Sesion Fixation     | user change from anomalous source                             |
-| Sesion Fixation     | user create and auth from same source                         |
-| Sesion Fixation     | user create from a new source                                 |
-| Sesion Fixation     | user create, new relationship                                 |
-| Sesion Fixation     | user or group change, new relationship                        |
-| Sesion Fixation     | user rights change from anomalous source                      |
+| Category             | Search Name                                                   |
+|----------------------|---------------------------------------------------------------|
+| Initial Access       | Distributed brute force                                       |
+| Initial Access       | Numerous failed auth, multiple hosts                          |
+| Initial Access       | Numerous failed auth, multiple sources                        |
+| Initial Access       | Numerous failed auth, multiple targets                        |
+| Initial Access       | Numerous failed auth, single host                             |
+| Initial Access       | Successful brute force                                        |
+| Privilege Escalation | Anomalous changed group                                       |
+| Privilege Escalation | Anomalous changed user                                        |
+| Privilege Escalation | Anomalous delete group                                        |
+| Privilege Escalation | Anomalous delete user                                         |
+| Privilege Escalation | Anomalous new group                                           |
+| Privilege Escalation | Anomalous new user                                            |
+| Initial Access       | Anomalous authentication - geography                          |
+| Initial Access       | Anomalous authentication - no 2fa                             |
+| Initial Access       | Anomalous authentication - source cidr                        |
+| Initial Access       | Auth fail spike                                               |
+| Initial Access       | Default accounts                                              |
+| Initial Access       | Default key usage                                             |
+| Initial Access       | Disabled account                                              |
+| Initial Access       | Expired account                                               |
+| Initial Access       | First login by a user                                         |
+| Initial Access       | Inactive account                                              |
+| Initial Access       | Overnight auth                                                |
+| Initial Access       | Remote root / admin login                                     |
+| Initial Access       | Successful auth preceded by scan                              |
+| Initial Access       | Successful auth, anomalous user context                       |
+| Initial Access       | Successful auth, remote source                                |
+| Initial Access       | Weekend auth                                                  |
+| Lateral Movement     | Access to multiple organizations from one ip address          |
+| Lateral Movement     | Access to multiple organizations from one user context        |
+| Initial Access       | Anomalous management user access                              |
+| Privilege Escalation | Anomalous management user creation                            |
+| Initial Access       | Anomalous management user login                               |
+| Initial Access       | Anomalous organization admin access                           |
+| Initial Access       | Anomalous organization admin access                           |
+| Privilege Escalation | Anomalous organization admin creation                         |
+| Privilege Escalation | Anomalous organization admin creation                         |
+| Initial Access       | Anomalous organization admin login                            |
+| Privilege Escalation | Consumer organization user accessing management method        |
+| Privilege Escalation | Consumer organization user accessing management organization  |
+| Privilege Escalation | Management access from a consumer organization environment    |
+| Lateral Movement     | Organization / user context mismatch                          |
+| Lateral Movement     | Organization access from a different organization environment |
+| Collection           | Same action in multiple organizations in a short time         |
+| Initial Access       | Authentication by user on pto                                 |
+| Privilege Escalation | Group change from anomalous source                            |
+| Initial Access       | One time token reuse                                          |
+| Initial Access       | Privileged user auth, new relationship                        |
+| Persistence          | Same user, different countries                                |
+| Persistence          | Same user, different countries, for more than one day         |
+| Persistence          | Same user, different ips                                      |
+| Persistence          | Token use by different ip addresses                           |
+| Persistence          | Token use by different user agents                            |
+| Privilege Escalation | User change from anomalous source                             |
+| Persistence          | User create and auth from same source                         |
+| Privilege Escalation | User create from a new source                                 |
+| Privilege Escalation | User create, new relationship                                 |
+| Privilege Escalation | User or group change, new relationship                        |
+| Privilege Escalation | User rights change from anomalous source                      |

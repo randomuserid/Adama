@@ -1,198 +1,192 @@
 Cross Platform Searches - these are applicable to Linux, MacOS and Windows log data pipelines.
 
-| Category   | Data type  | Description                                                   |
-|------------|------------|---------------------------------------------------------------|
-| Behavioral | Process    | Abnormal file                                                 |
-| Behavioral | File       | Abnormal file                                                 |
-| Behavioral | Logs       | abnormal process exit                                         |
-| Behavioral | Logs       | Abnormal process exit                                         |
-| Behavioral | Process    | aircrack-ng                                                   |
-| Behavioral | Process    | airsnort                                                      |
-| Behavioral | Process    | Anomalous 7zip activity                                       |
-| Behavioral | Logs       | Anomalous Computer Account Remove                             |
-| Behavioral | Logs       | Anomalous configuration change                                |
-| Behavioral | Process    | Anomalous configuration change                                |
-| Behavioral | Process    | Anomalous dns  connection activity                            |
-| Behavioral | Logs       | Anomalous Group Added                                         |
-| Behavioral | Logs       | Anomalous Group Change                                        |
-| Behavioral | Logs       | Anomalous Group Member Add                                    |
-| Behavioral | Logs       | Anomalous Group Member Remove                                 |
-| Behavioral | Logs       | Anomalous Group Removed                                       |
-| Behavioral | Process    | Anomalous JVM command activity                                |
-| Behavioral | Process    | Anomalous JVM connection outbound                             |
-| Behavioral | Process    | Anomalous listening port                                      |
-| Behavioral | Process    | Anomalous memache activity                                    |
-| Behavioral | Process    | Anomalous new process                                         |
-| Behavioral | Process    | Anomalous new service                                         |
-| Behavioral | Process    | Anomalous ntp activity                                        |
-| Behavioral | Process    | Anomalous PHP activity                                        |
-| Behavioral | Network    | Anomalous PHP interpreter activity                            |
-| Behavioral | Logs       | Anomalous Policy Added                                        |
-| Behavioral | Logs       | Anomalous Policy Change                                       |
-| Behavioral | Process    | anomalous port 102 activity                                   |
-| Behavioral | Process    | anomalous port 110 activity                                   |
-| Behavioral | Process    | Anomalous port 123 activity                                   |
-| Behavioral | Process    | Anomalous port 135 activity                                   |
-| Behavioral | Process    | Anomalous port 137 activity                                   |
-| Behavioral | Process    | Anomalous port 138 activity                                   |
-| Behavioral | Process    | Anomalous port 139                                            |
-| Behavioral | Process    | anomalous port 143 activity                                   |
-| Behavioral | Process    | anomalous port 25 activity                                    |
-| Behavioral | Process    | Anomalous port 3268 activity                                  |
-| Behavioral | Process    | Anomalous port 3269 activity                                  |
-| Behavioral | Process    | Anomalous port 3389 activity                                  |
-| Behavioral | Process    | anomalous port 3389 activity                                  |
-| Behavioral | Process    | Anomalous port 389 activity                                   |
-| Behavioral | Process    | Anomalous port 42 activity                                    |
-| Behavioral | Process    | Anomalous port 443 activity                                   |
-| Behavioral | Process    | Anomalous port 445 activity                                   |
-| Behavioral | Process    | Anomalous port 445 activity                                   |
-| Behavioral | Process    | Anomalous port 53 activity                                    |
-| Behavioral | Process    | anomalous port 593 activity                                   |
-| Behavioral | Process    | Anomalous port 593 activity                                   |
-| Behavioral | Process    | Anomalous port 636 activity                                   |
-| Behavioral | Process    | Anomalous port 88 activity                                    |
-| Behavioral | Process    | anomalous port 993 activity                                   |
-| Behavioral | Process    | Anomalous process activity from system paths                  |
-| Behavioral | Process    | Anomalous python activity                                     |
-| Behavioral | Process    | Anomalous python connection                                   |
-| Behavioral | Process    | Anomalous python script                                       |
-| Behavioral | Process    | Anomalous remote connection                                   |
-| Behavioral | Process    | Anomalous ruby activity                                       |
-| Behavioral | Process    | Anomalous ruby connection                                     |
-| Behavioral | Process    | Anomalous ruby script                                         |
-| Behavioral | Process    | Anomalous script interpreter activity in the temp directories |
-| Behavioral | Process    | Anomalous shell interpreter connection                        |
-| Behavioral | Process    | Anomalous shell script activity                               |
-| Behavioral | Process    | Anomalous SSH client activity                                 |
-| Behavioral | Process    | Anomalous SSH port activity                                   |
-| Behavioral | Process    | Anomalous SSH server activity                                 |
-| Behavioral | Logs       | Anomalous Trusted Domain Add                                  |
-| Behavioral | Logs       | Anomalous Trusted Domain Remove                               |
-| Behavioral | Process    | Anomalous twitter activity                                    |
-| Behavioral | Logs       | Anomalous User Account Add                                    |
-| Behavioral | Logs       | Anomalous User Account Change                                 |
-| Behavioral | Logs       | Anomalous User Account Remove                                 |
-| Behavioral | Logs       | Anomalous User Right Assigned                                 |
-| Behavioral | Logs       | Anomalous User Right Remove                                   |
-| Behavioral | Process    | Anomalous whois activity                                      |
-| Behavioral | Process    | Anomalous winrar activity                                     |
-| Behavioral | Process    | blacklisted Process activity                                  |
-| Behavioral | Process    | burp                                                          |
-| Behavioral | Process    | charles                                                       |
-| Behavioral | Process    | Command shell started by browser                              |
-| Behavioral | Process    | Command shell started by email client                         |
-| Behavioral | Process    | Command shell started by office app                           |
-| Behavioral | Process    | Command shell started by PDF reader                           |
-| Behavioral | Logs       | configuration change                                          |
-| Behavioral | Process    | cryptcat - http://cryptcat.sourceforge.net/info.php           |
-| Behavioral | Logs       | cryptominer detection                                         |
-| Behavioral | Process    | Device driver activity                                        |
-| Behavioral | Logs       | device entered promiscuous mode                               |
-| Behavioral | Logs       | Device entered promiscuous mode                               |
-| Behavioral | Process    | DNS activity to remote destination                            |
-| Behavioral | tbd        | DNS tunneling                                                 |
-| Behavioral | tbd        | Domain fronting                                               |
-| Behavioral | Logs       | Dual-use or pup detected                                      |
-| Behavioral | Process    | fiddler                                                       |
-| Behavioral | Process    | filezilla                                                     |
-| Behavioral | Network    | ftp activity                                                  |
-| Behavioral | Process    | hashcat activity                                              |
-| Behavioral | Process    | hping activity                                                |
-| Behavioral | tbd        | HTTPS tunneling                                               |
-| Behavioral | Process    | IPsec activity outbound                                       |
-| Behavioral | Both       | IPsec tunnel creation                                         |
-| Behavioral | Process    | IPv6 activity in an IPv4 environment                          |
-| Behavioral | Process    | IRC activity                                                  |
-| Behavioral | Network    | irc connections                                               |
-| Behavioral | Process    | Java Process started by browser                               |
-| Behavioral | Process    | Java Process started by email client                          |
-| Behavioral | Process    | Java Process started by office app                            |
-| Behavioral | Process    | Java Process started by PDF reader                            |
-| Behavioral | Process    | javascript executed from a zip file                           |
-| Behavioral | Process    | jerry (Vmware fingerprinter)                                  |
-| Behavioral | Process    | john the ripper activity                                      |
-| Behavioral | Process    | JVM crash logged                                              |
-| Behavioral | Behavioral | jvm management traffic, remote                                |
-| Behavioral | Process    | Kernel module activity                                        |
-| Behavioral | Process    | kismet                                                        |
-| Behavioral | Logs       | Log tampering - stop or deletes                               |
-| Behavioral | Process    | log tampering - stop or deletes                               |
-| Behavioral | Logs       | Malware detected, not removed                                 |
-| Behavioral | Logs       | Malware detected, removed                                     |
-| Behavioral | Process    | Memory dumping                                                |
-| Behavioral | Process    | Metasploit activity                                           |
-| Behavioral | Process    | metrepreter Process                                           |
-| Behavioral | Process    | monkeyShell - monkey_Shell.py, monkey_Shelld.py               |
-| Behavioral | Process    | nessus                                                        |
-| Behavioral | Behavioral | netcat or ncat activity                                       |
-| Behavioral | Process    | netstumbler                                                   |
-| Behavioral | Process    | nikto                                                         |
-| Behavioral | Process    | nmap activity                                                 |
-| Behavioral | Process    | openVAS                                                       |
-| Behavioral | Behavioral | outbound connection by jvm                                    |
-| Behavioral | Behavioral | outbound connection from java proc                            |
-| Behavioral | Process    | paros proxy                                                   |
-| Behavioral | Network    | PPTP tunnel creation                                          |
-| Behavioral | Process    | PPTP tunnel outbound to remote destination                    |
-| Behavioral | Behavioral | proces activity from system paths                             |
-| Behavioral | Behavioral | process activity by jvm                                       |
-| Behavioral | Process    | process started by a browser                                  |
-| Behavioral | Process    | Process started by email client                               |
-| Behavioral | Process    | Process started by jvm                                        |
-| Behavioral | Process    | Process started by Office app                                 |
-| Behavioral | Process    | Process started by PDF reader                                 |
-| Behavioral | Logs       | ransomware detection                                          |
-| Behavioral | Process    | RDP to remote destination                                     |
-| Behavioral | Process    | redpill Vmware fingerprinter                                  |
-| Behavioral | Behavioral | remote dns activity                                           |
-| Behavioral | tbd        | Reverse shells                                                |
-| Behavioral | Behavioral | rootshell piped to tcp device                                 |
-| Behavioral | Process    | rpcdump - rpcdump.py                                          |
-| Behavioral | Network    | Russian VKontakte social media site                           |
-| Behavioral | Network    | scp outbound                                                  |
-| Behavioral | Process    | Security  agent injection                                     |
-| Behavioral | Behavioral | security  agent injection                                     |
-| Behavioral | Logs       | Security agent scan terminated                                |
-| Behavioral | Behavioral | security agent scan terminated                                |
-| Behavioral | Process    | Security agent termination                                    |
-| Behavioral | Behavioral | security agent termination                                    |
-| Behavioral | Logs       | Service fail                                                  |
-| Behavioral | Logs       | Service failure                                               |
-| Behavioral | Process    | shareutils                                                    |
-| Behavioral | Behavioral | shell commands by a web server process                        |
-| Behavioral | Behavioral | shell commands by anomalous user context                      |
-| Behavioral | Process    | Shell commands by anomalous user context                      |
-| Behavioral | Process    | Shell commands by database server process                     |
-| Behavioral | Process    | Shell commands by database server user context                |
-| Behavioral | Process    | Shell commands by web server process                          |
-| Behavioral | Behavioral | shell commands by web server process                          |
-| Behavioral | Process    | Shell commands by web server user context                     |
-| Behavioral | Behavioral | shell commands by web server user context                     |
-| Behavioral | Process    | Shell commands from office app                                |
-| Behavioral | Network    | SMB / CIFS activity                                           |
-| Behavioral | Process    | snmp-fuzzer                                                   |
-| Behavioral | Logs       | spyware detection                                             |
-| Behavioral | Process    | SSH activity by anomalous client                              |
-| Behavioral | Process    | SSH activity on unusual port                                  |
-| Behavioral | Process    | SSH outbound fromma server                                    |
-| Behavioral | Process    | TeamViewer activity                                           |
-| Behavioral | Process    | telnet or rsh activity                                        |
-| Behavioral | Process    | TFTP activity                                                 |
-| Behavioral | Network    | twitter activity                                              |
-| Behavioral | Process    | Twittersploit                                                 |
-| Behavioral | Process    | Unauthorized browser                                          |
-| Behavioral | Process    | unrar                                                         |
-| Behavioral | Logs       | Unsafe file                                                   |
-| Behavioral | Logs       | unsafe path                                                   |
-| Behavioral | Process    | vmftp VMware backdoor client                                  |
-| Behavioral | Process    | vmshrink VMware backdoor client                               |
-| Behavioral | Process    | vmw c - VMware backdoor clipboard activity                    |
-| Behavioral | Process    | vmw r - VMware backdoor rpc activity                          |
-| Behavioral | Process    | vmw VMware backdoor client                                    |
-| Behavioral | Process    | VNC activity                                                  |
-| Behavioral | Process    | wireshark                                                     |
-| Behavioral | Process    | zed attack proxy                                              |
-| Behavioral | Process    | zenmap                                                        |
-| Behavioral | Logs       | Zone transfer failed                                          |
-| Behavioral | Logs       | Zone transfer succeeded                                       |
+| Event Type | Category             | Search name                                                   |
+|------------|----------------------|---------------------------------------------------------------|
+| Behavioral | Behavioral Detection | Jvm management traffic, remote                                |
+| Behavioral | Behavioral Detection | Netcat or ncat activity                                       |
+| Behavioral | Behavioral Detection | Outbound connection by jvm                                    |
+| Behavioral | Behavioral Detection | Outbound connection from java proc                            |
+| Behavioral | Behavioral Detection | Proces activity from system paths                             |
+| Behavioral | Behavioral Detection | Process activity by jvm                                       |
+| Behavioral | Behavioral Detection | Remote dns activity                                           |
+| Behavioral | Behavioral Detection | Rootshell piped to tcp device                                 |
+| Behavioral | Behavioral Detection | Shell commands by a web server process                        |
+| Behavioral | Behavioral Detection | Shell commands by anomalous user context                      |
+| Behavioral | Behavioral Detection | Shell commands by web server process                          |
+| Behavioral | Behavioral Detection | Shell commands by web server user context                     |
+| Both       | Behavioral Detection | Ipsec tunnel creation                                         |
+| File       | Behavioral Detection | Abnormal file                                                 |
+| Logs       | Behavioral Detection | Abnormal process exit                                         |
+| Logs       | Behavioral Detection | Anomalous computer account remove                             |
+| Logs       | Behavioral Detection | Anomalous configuration change                                |
+| Logs       | Behavioral Detection | Anomalous group added                                         |
+| Logs       | Behavioral Detection | Anomalous group change                                        |
+| Logs       | Behavioral Detection | Anomalous group member add                                    |
+| Logs       | Behavioral Detection | Anomalous group member remove                                 |
+| Logs       | Behavioral Detection | Anomalous group removed                                       |
+| Logs       | Behavioral Detection | Anomalous policy added                                        |
+| Logs       | Behavioral Detection | Anomalous policy change                                       |
+| Logs       | Behavioral Detection | Anomalous trusted domain add                                  |
+| Logs       | Behavioral Detection | Anomalous trusted domain remove                               |
+| Logs       | Behavioral Detection | Anomalous user account add                                    |
+| Logs       | Behavioral Detection | Anomalous user account change                                 |
+| Logs       | Behavioral Detection | Anomalous user account remove                                 |
+| Logs       | Behavioral Detection | Anomalous user right assigned                                 |
+| Logs       | Behavioral Detection | Anomalous user right remove                                   |
+| Logs       | Behavioral Detection | Configuration change                                          |
+| Logs       | Behavioral Detection | Cryptominer detection                                         |
+| Logs       | Behavioral Detection | Device entered promiscuous mode                               |
+| Logs       | Behavioral Detection | Dual-use or pup detected                                      |
+| Logs       | Behavioral Detection | Log tampering - stop or deletes                               |
+| Logs       | Behavioral Detection | Malware detected, not removed                                 |
+| Logs       | Behavioral Detection | Malware detected, removed                                     |
+| Logs       | Behavioral Detection | Ransomware detection                                          |
+| Logs       | Behavioral Detection | Security agent scan terminated                                |
+| Logs       | Behavioral Detection | Service failure                                               |
+| Logs       | Behavioral Detection | Spyware detection                                             |
+| Logs       | Behavioral Detection | Unsafe file                                                   |
+| Logs       | Behavioral Detection | Unsafe path                                                   |
+| Logs       | Behavioral Detection | Zone transfer failed                                          |
+| Logs       | Behavioral Detection | Zone transfer succeeded                                       |
+| Network    | Behavioral Detection | Anomalous php interpreter activity                            |
+| Network    | Behavioral Detection | Anomalous port 102 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 110 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 123 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 135 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 137 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 138 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 139                                            |
+| Network    | Behavioral Detection | Anomalous port 143 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 25 activity                                    |
+| Network    | Behavioral Detection | Anomalous port 3268 activity                                  |
+| Network    | Behavioral Detection | Anomalous port 3269 activity                                  |
+| Network    | Behavioral Detection | Anomalous port 3389 activity                                  |
+| Network    | Behavioral Detection | Anomalous port 3389 activity                                  |
+| Network    | Behavioral Detection | Anomalous port 389 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 42 activity                                    |
+| Network    | Behavioral Detection | Anomalous port 443 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 445 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 445 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 53 activity                                    |
+| Network    | Behavioral Detection | Anomalous port 593 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 593 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 636 activity                                   |
+| Network    | Behavioral Detection | Anomalous port 88 activity                                    |
+| Network    | Behavioral Detection | Anomalous port 993 activity                                   |
+| Network    | Behavioral Detection | Ftp activity                                                  |
+| Network    | Behavioral Detection | Irc connections                                               |
+| Network    | Behavioral Detection | Pptp tunnel creation                                          |
+| Network    | Behavioral Detection | Russian vkontakte social media site                           |
+| Network    | Behavioral Detection | Scp outbound                                                  |
+| Network    | Behavioral Detection | Smb / cifs activity                                           |
+| Network    | Behavioral Detection | Twitter activity                                              |
+| Process    | Behavioral Detection | Abnormal file                                                 |
+| Process    | Behavioral Detection | Aircrack-ng                                                   |
+| Process    | Behavioral Detection | Airsnort                                                      |
+| Process    | Behavioral Detection | Anomalous 7zip activity                                       |
+| Process    | Behavioral Detection | Anomalous configuration change                                |
+| Process    | Behavioral Detection | Anomalous dns connection activity                             |
+| Process    | Behavioral Detection | Anomalous jvm command activity                                |
+| Process    | Behavioral Detection | Anomalous jvm connection outbound                             |
+| Process    | Behavioral Detection | Anomalous listening port                                      |
+| Process    | Behavioral Detection | Anomalous memcache activity                                   |
+| Process    | Behavioral Detection | Anomalous new process                                         |
+| Process    | Behavioral Detection | Anomalous new service                                         |
+| Process    | Behavioral Detection | Anomalous ntp activity                                        |
+| Process    | Behavioral Detection | Anomalous php activity                                        |
+| Process    | Behavioral Detection | Anomalous process activity from system paths                  |
+| Process    | Behavioral Detection | Anomalous python activity                                     |
+| Process    | Behavioral Detection | Anomalous python connection                                   |
+| Process    | Behavioral Detection | Anomalous python script                                       |
+| Process    | Behavioral Detection | Anomalous remote connection                                   |
+| Process    | Behavioral Detection | Anomalous ruby activity                                       |
+| Process    | Behavioral Detection | Anomalous ruby connection                                     |
+| Process    | Behavioral Detection | Anomalous ruby script                                         |
+| Process    | Behavioral Detection | Anomalous script interpreter activity in the temp directories |
+| Process    | Behavioral Detection | Anomalous shell interpreter connection                        |
+| Process    | Behavioral Detection | Anomalous shell script activity                               |
+| Process    | Behavioral Detection | Anomalous ssh client activity                                 |
+| Process    | Behavioral Detection | Anomalous ssh port activity                                   |
+| Process    | Behavioral Detection | Anomalous ssh server activity                                 |
+| Process    | Behavioral Detection | Anomalous twitter activity                                    |
+| Process    | Behavioral Detection | Anomalous whois activity                                      |
+| Process    | Behavioral Detection | Anomalous winrar activity                                     |
+| Process    | Behavioral Detection | Blacklisted process activity                                  |
+| Process    | Behavioral Detection | Burp activity                                                 |
+| Process    | Behavioral Detection | Charles activity                                              |
+| Process    | Behavioral Detection | Command shell started by browser                              |
+| Process    | Behavioral Detection | Command shell started by email client                         |
+| Process    | Behavioral Detection | Command shell started by office app                           |
+| Process    | Behavioral Detection | Command shell started by pdf reader                           |
+| Process    | Behavioral Detection | Cryptcat - http://cryptcat.sourceforge.net/info.php           |
+| Process    | Behavioral Detection | Device driver activity                                        |
+| Process    | Behavioral Detection | Dns activity to remote destination                            |
+| Process    | Behavioral Detection | Fiddler                                                       |
+| Process    | Behavioral Detection | Filezilla                                                     |
+| Process    | Behavioral Detection | Hashcat activity                                              |
+| Process    | Behavioral Detection | Hping activity                                                |
+| Process    | Behavioral Detection | Ipsec activity outbound                                       |
+| Process    | Behavioral Detection | Ipv6 activity in an ipv4 environment                          |
+| Process    | Behavioral Detection | Irc activity                                                  |
+| Process    | Behavioral Detection | Java process started by browser                               |
+| Process    | Behavioral Detection | Java process started by email client                          |
+| Process    | Behavioral Detection | Java process started by office app                            |
+| Process    | Behavioral Detection | Java process started by pdf reader                            |
+| Process    | Behavioral Detection | Javascript executed from a zip file                           |
+| Process    | Behavioral Detection | Jerry (vmware fingerprinter)                                  |
+| Process    | Behavioral Detection | John the ripper activity                                      |
+| Process    | Behavioral Detection | Jvm crash logged                                              |
+| Process    | Behavioral Detection | Kernel module activity                                        |
+| Process    | Behavioral Detection | Kismet                                                        |
+| Process    | Behavioral Detection | Log tampering - stop or deletes                               |
+| Process    | Behavioral Detection | Memory dumping                                                |
+| Process    | Behavioral Detection | Metasploit activity                                           |
+| Process    | Behavioral Detection | Metrepreter process                                           |
+| Process    | Behavioral Detection | Monkeyshell - monkey_shell.py, monkey_shelld.py               |
+| Process    | Behavioral Detection | Nessus                                                        |
+| Process    | Behavioral Detection | Netstumbler                                                   |
+| Process    | Behavioral Detection | Nikto                                                         |
+| Process    | Behavioral Detection | Nmap activity                                                 |
+| Process    | Behavioral Detection | Openvas                                                       |
+| Process    | Behavioral Detection | Paros proxy                                                   |
+| Process    | Behavioral Detection | Pptp tunnel outbound to remote destination                    |
+| Process    | Behavioral Detection | Process started by a browser                                  |
+| Process    | Behavioral Detection | Process started by email client                               |
+| Process    | Behavioral Detection | Process started by jvm                                        |
+| Process    | Behavioral Detection | Process started by office app                                 |
+| Process    | Behavioral Detection | Process started by pdf reader                                 |
+| Process    | Behavioral Detection | Rdp to remote destination                                     |
+| Process    | Behavioral Detection | Redpill vmware fingerprinter                                  |
+| Process    | Behavioral Detection | Rpcdump - rpcdump.py                                          |
+| Process    | Behavioral Detection | Security  agent injection                                     |
+| Process    | Behavioral Detection | Security agent termination                                    |
+| Process    | Behavioral Detection | Shareutils                                                    |
+| Process    | Behavioral Detection | Shell commands by anomalous user context                      |
+| Process    | Behavioral Detection | Shell commands by database server process                     |
+| Process    | Behavioral Detection | Shell commands by database server user context                |
+| Process    | Behavioral Detection | Shell commands by web server process                          |
+| Process    | Behavioral Detection | Shell commands by web server user context                     |
+| Process    | Behavioral Detection | Shell commands by office app                                  |
+| Process    | Behavioral Detection | Snmp-fuzzer                                                   |
+| Process    | Behavioral Detection | Ssh activity by anomalous client                              |
+| Process    | Behavioral Detection | Ssh activity on unusual port                                  |
+| Process    | Behavioral Detection | Ssh outbound fromm a server                                   |
+| Process    | Behavioral Detection | Teamviewer activity                                           |
+| Process    | Behavioral Detection | Telnet or rsh activity                                        |
+| Process    | Behavioral Detection | Tftp activity                                                 |
+| Process    | Behavioral Detection | Twittersploit                                                 |
+| Process    | Behavioral Detection | Unauthorized browser                                          |
+| Process    | Behavioral Detection | Unrar                                                         |
+| Process    | Behavioral Detection | Vmftp vmware backdoor client                                  |
+| Process    | Behavioral Detection | Vmshrink vmware backdoor client                               |
+| Process    | Behavioral Detection | Vmw c - vmware backdoor clipboard activity                    |
+| Process    | Behavioral Detection | Vmw r - vmware backdoor rpc activity                          |
+| Process    | Behavioral Detection | Vmw vmware backdoor client                                    |
+| Process    | Behavioral Detection | Vnc activity                                                  |
+| Process    | Behavioral Detection | Wireshark                                                     |
+| Process    | Behavioral Detection | Zed attack proxy                                              |
+| Process    | Behavioral Detection | Zenmap                                                        |
+| tbd        | Behavioral Detection | Dns tunneling                                                 |
+| tbd        | Behavioral Detection | Domain fronting                                               |
+| tbd        | Behavioral Detection | Https tunneling                                               |
+| tbd        | Behavioral Detection | Reverse shells                                                |
