@@ -1,34 +1,88 @@
 Network data searches
 
-| Data Source | Description                                                          |
+| Event Type  | Search Name                                                          |
 |-------------|----------------------------------------------------------------------|
+| IDS Detects | Anomalous DNS message                                                |
+| IDS Detects | Anomalous firewall changes                                           |
+| IDS Detects | Anomalous icmp activity                                              |
 | Flows       | Anomalous management / consumer instance traffic                     |
 | Flows       | Anomalous memache activity                                           |
 | Flows       | Anomalous rdp activity                                               |
-| Flows       | blacklisted port activity                                            |
+| IDS Detects | Anomalous SSL traffic                                                |
+| Proxy       | Beef request                                                         |
+| IDS Detects | Binary file download                                                 |
+| Proxy       | Binary file in HTTP activity                                         |
+| Flows       | Blacklisted port activity                                            |
+| IDS Detects | C2 outbound, denied                                                  |
+| IDS Detects | C2 outbound, successful                                              |
 | Flows       | Chinese flows                                                        |
-| Flows       | darknet flows                                                        |
+| Proxy       | Classified data detect in web traffic                                |
+| Proxy       | Classified data in HTTP stream                                       |
+| IDS         | Clear text passwords                                                 |
+| Flows       | Darknet flows                                                        |
 | Flows       | Data heavy outbound web activity                                     |
 | Flows       | Database connection from remote source                               |
+| IDS Detects | DNS amplification                                                    |
+| IDS Detects | DNS excessive answers                                                |
+| IDS Detects | DNS query contains answer                                            |
 | Flows       | DNS requests to remote server                                        |
-| Flows       | elasticsearch connection from remote source                          |
+| IDS Detects | DNS response with low ttl                                            |
+| IDS Detects | Domain fronting                                                      |
+| Proxy       | DPRK / APT37 user agent                                              |
+| IDS Detects | Eastern Europe flows                                                 |
+| Flows       | Elasticsearch connection from remote source                          |
+| IDS Detects | Elephants (large flows)                                              |
+| IDS Detects | Exploit targeted at firewalls                                        |
+| IDS Detects | Exploit targeted at proxy server                                     |
+| IDS Detects | Exploit targeting management server                                  |
+| IDS Detects | Exploit, consumer to management layers                               |
+| IDS Detects | Exploit, inbound                                                     |
+| IDS Detects | Exploit, management to consumer layers                               |
+| IDS Detects | Exploit, management to management layers                             |
+| IDS Detects | Exploit, outbound                                                    |
 | Flows       | FTP activity                                                         |
-| Flows       | honeypot flows                                                       |
+| IDS Detects | High frequency DNS requests                                          |
+| Flows       | Honeypot flows                                                       |
+| Proxy       | Hook.js requests                                                     |
+| Proxy       | HTTP based executable file download                                  |
+| Proxy       | Http request no DNS                                                  |
 | Flows       | ICMP outbound                                                        |
 | Flows       | IMAP outbound                                                        |
+| IDS Detects | Insecure authentication - HTTP                                       |
+| IDS Detects | Insecure authentication - telnet or ftp                              |
+| IDS Detects | Ipv6 activity in an ipv4 environment                                 |
+| IDS Detects | Ipv6 and tunnels -  some HEI use tunnels for exfil                   |
 | Flows       | IRC                                                                  |
+| IDS Detects | IRC activity                                                         |
 | Flows       | IRC port activity                                                    |
-| Flows       | kibana connection                                                    |
-| Flows       | large outbound byte count                                            |
+| JA3         | JA3 malware detect                                                   |
+| Proxy       | Jar file in HTTP response (from proxy)                               |
+| Proxy       | Java download                                                        |
+| IDS Detects | Jvm management traffic, remote                                       |
+| Flows       | Kibana connection                                                    |
+| IDS Detects | Large DNS requests                                                   |
+| Flows       | Large outbound byte count                                            |
 | Flows       | Long flows                                                           |
-| Flows       | long outbound connection                                             |
+| Flows       | Long outbound connection                                             |
+| Proxy       | Metasploit                                                           |
+| Proxy       | Meterpreter in HTTP response (from proxy)                            |
 | Flows       | Mice (small flows)                                                   |
+| Logs        | Network configuration change                                         |
 | Flows       | NFS activity                                                         |
+| IDS Detects | Non-volumetric  dos                                                  |
+| Proxy       | Non-volumetric  dos                                                  |
 | Flows       | Outbound data geometry                                               |
-| Flows       | PCAnywhere activity                                                  |
-| Flows       | ports 1080,3128,8000,8080,8083,8118,8888 (frequently targeted ports) |
-| Flows       | programmatic outbound traffic                                        |
-| Flows       | rapidshare activity                                                  |
+| IDS Detects | Outbound database traffic, remote                                    |
+| IDS Detects | Packed executable not from Windows Update                            |
+| Flows       | Pcanywhere activity                                                  |
+| IDS Detects | PII information on the wire                                          |
+| Flows       | Ports 1080,3128,8000,8080,8083,8118,8888 (frequently targeted ports) |
+| IDS Detects | Powershell activity                                                  |
+| Proxy       | Powershell activity                                                  |
+| Proxy       | Powershell command in HTTP response (from proxy)                     |
+| Flows       | Programmatic outbound traffic                                        |
+| Proxy       | Proxy event containing file extension                                |
+| Flows       | Rapidshare activity                                                  |
 | Flows       | Remote CIFS activity                                                 |
 | Flows       | Remote proxy server activity                                         |
 | Flows       | Rsynch activity                                                      |
@@ -36,86 +90,32 @@ Network data searches
 | Flows       | Russian flows                                                        |
 | Flows       | SANS block list activity                                             |
 | Flows       | SCP activity, remote                                                 |
-| Flows       | small connections less than 10 bytes                                 |
+| IDS Detects | Shell commands in network traffic                                    |
+| Flows       | Small connections less than 10 bytes                                 |
+| IDS Detects | SMB activity with domain of "WORKGROUP"                              |
 | Flows       | SMB activity, remote                                                 |
 | Flows       | SMTP activity, remote                                                |
-| Flows       | ssh, remote                                                          |
+| IDS Detects | Ssh tunneling                                                        |
+| Flows       | Ssh, remote                                                          |
 | Flows       | Tcp port 0 traffic                                                   |
-| Flows       | TeamViewer                                                           |
+| IDS Detects | Tcp tunneling                                                        |
+| Flows       | Teamviewer                                                           |
 | Flows       | TFTP activity                                                        |
-| Flows       | tor flows                                                            |
-| Flows       | VNC from remote source                                               |
-| Flows       | volumetric dos, non-targeted                                         |
-| Flows       | volumetric dos, targeted                                             |
-| Flows       | web traffic, bad IP                                                  |
-| IDS         | clear text passwords                                                 |
-| IDS         | tor activity                                                         |
-| IDS Detects | Anomalous DNS message                                                |
-| IDS Detects | Anomalous firewall changes                                           |
-| IDS Detects | Anomalous icmp activity                                              |
-| IDS Detects | Anomalous SSL traffic                                                |
-| IDS Detects | binary file download                                                 |
-| IDS Detects | c2 outbound, denied                                                  |
-| IDS Detects | c2 outbound, successful                                              |
-| IDS Detects | DNS amplification                                                    |
-| IDS Detects | DNS excessive answers                                                |
-| IDS Detects | DNS query contains answer                                            |
-| IDS Detects | DNS response with low ttl                                            |
-| IDS Detects | domain fronting                                                      |
-| IDS Detects | Eastern Europe flows                                                 |
-| IDS Detects | Elephants (large flows)                                              |
-| IDS Detects | exploit targeted at firewalls                                        |
-| IDS Detects | exploit targeted at proxy server                                     |
-| IDS Detects | Exploit targeting management server                                  |
-| IDS Detects | exploit, consumer to management layers                               |
-| IDS Detects | exploit, inbound                                                     |
-| IDS Detects | exploit, management to consumer layers                               |
-| IDS Detects | exploit, management to management layers                             |
-| IDS Detects | exploit, outbound                                                    |
-| IDS Detects | high frequency DNS requests                                          |
-| IDS Detects | insecure authentication - HTTP                                       |
-| IDS Detects | insecure authentication - telnet or ftp                              |
-| IDS Detects | IPv6 activity in an IPv4 environment                                 |
-| IDS Detects | IPv6 and tunnels -  some HEI use tunnels for exfil                   |
-| IDS Detects | IRC activity                                                         |
-| IDS Detects | jvm management traffic, remote                                       |
-| IDS Detects | large DNS requests                                                   |
-| IDS Detects | non-volumetric  DoS                                                  |
-| IDS Detects | outbound database traffic, remote                                    |
-| IDS Detects | Packed executable not from Windows Update                            |
-| IDS Detects | PII information on the wire                                          |
-| IDS Detects | Powershell activity                                                  |
-| IDS Detects | shell commands in network traffic                                    |
-| IDS Detects | SMB activity with domain of "WORKGROUP"                              |
-| IDS Detects | ssh tunneling                                                        |
-| IDS Detects | tcp tunneling                                                        |
 | IDS Detects | TLS on unusual port                                                  |
-| IDS Detects | web exploit, inbound                                                 |
-| IDS Detects | web exploit, inbound to client                                       |
-| IDS Detects | web exploit, inbound to webapp                                       |
-| IDS Detects | web exploit, outbound                                                |
-| IDS Detects | web shell, inbound                                                   |
-| IDS Detects | web shell, outbound                                                  |
-| IDS Detects | web traffic, c2                                                      |
-| IDS Detects | windows command shell across networks                                |
-| IDS Detects | windows command shell outbound                                       |
-| JA3         | JA3 malware detect                                                   |
-| Logs        | network configuration change                                         |
-| Proxy       | BeEF request                                                         |
-| Proxy       | binary file in HTTP activity                                         |
-| Proxy       | classified data detect in web traffic                                |
-| Proxy       | Classified data in HTTP stream                                       |
-| Proxy       | hook.js requests                                                     |
-| Proxy       | HTTP based executable file download                                  |
-| Proxy       | http request no DNS                                                  |
-| Proxy       | Jar file in HTTP response (from proxy)                               |
-| Proxy       | Java download                                                        |
-| Proxy       | Metasploit                                                           |
-| Proxy       | Meterpreter in HTTP response (from proxy)                            |
-| Proxy       | non-volumetric  DoS                                                  |
-| Proxy       | Powershell activity                                                  |
-| Proxy       | Powershell command in HTTP response (from proxy)                     |
-| Proxy       | Proxy event containing file extension                                |
-| Proxy       | web based file transfer activity                                     |
-| Proxy       | web traffic, suspicious user agent                                   |
-| Proxy       | DPRK / APT37 user agent                                              |
+| IDS         | Tor activity                                                         |
+| Flows       | Tor flows                                                            |
+| Flows       | VNC from remote source                                               |
+| Flows       | Volumetric dos, non-targeted                                         |
+| Flows       | Volumetric dos, targeted                                             |
+| Proxy       | Web based file transfer activity                                     |
+| IDS Detects | Web exploit, inbound                                                 |
+| IDS Detects | Web exploit, inbound to client                                       |
+| IDS Detects | Web exploit, inbound to webapp                                       |
+| IDS Detects | Web exploit, outbound                                                |
+| IDS Detects | Web shell, inbound                                                   |
+| IDS Detects | Web shell, outbound                                                  |
+| Flows       | Web traffic, bad IP                                                  |
+| IDS Detects | Web traffic, c2                                                      |
+| Proxy       | Web traffic, suspicious user agent                                   |
+| IDS Detects | Windows command shell across networks                                |
+| IDS Detects | Windows command shell outbound                                       |
