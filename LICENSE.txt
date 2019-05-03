@@ -1,3 +1,0 @@
-This project is intended for use in large scale security analytics systems using the open source ELK 
-(Elasticsearch, Logstash and Kibana) stack and may not be sold, productized
-or incorporated into a commercial product.
