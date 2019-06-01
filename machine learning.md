@@ -2,7 +2,7 @@ Machine learning hunts using the significant terms aggregation
 
 | Pipeline | Term                | Significant Term    | Dependencies              | Notes                                   |
 |----------|---------------------|---------------------|---------------------------|-----------------------------------------|
-| Auth     | cred                | key hash            | .                         | .                                       |
+| Auth     | username            | key hash            | .                         | .                                       |
 | Auth     | source country      | source city         | .                         | .                                       |
 | Auth     | user                | sourceIP            | .                         | .                                       |
 | Auth     | user                | source country      | .                         | .                                       |
@@ -11,7 +11,7 @@ Machine learning hunts using the significant terms aggregation
 | Flows    | action              | source country      | .                         | .                                       |
 | Flows    | action              | destination country | .                         | .                                       |
 | Flows    | destination country | destination city    | .                         | .                                       |
-| Flows    | source country      | destinatino ip      | .                         | remote to local                         |
+| Flows    | source country      | destination ip      | .                         | remote to local                         |
 | Flows    | source country      | destination city    | .                         | .                                       |
 | Flows    | sourceip            | destip              | .                         | local to remote                         |
 | Flows    | sourceip            | protocol            | .                         | local to remote                         |
