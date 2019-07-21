@@ -1,4 +1,7 @@
 | | | Sigma rule name                           | SpaceCake search name                                                                             | MITRE ATT&CK categories                                       | | |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| |
+| | |-------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------| | |
 | | | win_susp_powershell_empire_lanuch         |  Empire PowerShell launch parameters - possible Empire activity                                   | attack.execution                                              | | |
 | | | win_sdbinst_shim_persistence              |  Possible shim database persistence via sdbinst.exe writing to default shim database path         | attack.persistence                                            | | |
 | | | win_powershell_amsi_bypass                |  Powershell AMSI bypass via .NET reflection - possible attempt to disable AMSI scanning           | .                                                             | | |
