@@ -7,4 +7,4 @@ So I was asked to take a look at getting the Sigma rules working in ELK. There a
 
 SpaceCake to Sigma Matrix: this is a cross reference of the new searches and the original Sigma rules. I have mapped the MITRE ATT&CK categories from the originals to the new searches.
 
-Process Event Searches -  these are rewrites of the Sigma rules from here: https://github.com/Neo23x0/sigma/tree/master/rules/windows/process_creation
+Process Event Searches -  these are rewrites of the Sigma rules from the "process_creation" folder.
