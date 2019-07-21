@@ -20,17 +20,17 @@
 | win_susp_bcdedit                          | MBR modifications by bcdedit.exe - possible ransomware                                            | attack.defense_evasion attack.persistence                     |
 | win_workflow_compiler                     | Microsoft Workflow Compiler activity - possible execution of arbitrary unsigned code              | attack.defense_evasion                                        |
 | win_office_spawn_exe_from_users_directory | MS Office Product Spawning Exe in User Dir                                                        | attack.execution attack.defense_evasion                       |
-| win_lethalhta                             | MSHTA spwaned by SVCHOST as seen in LethalHTA                                                     | attack.defense_evasion attack.execution                       |
+| win_lethalhta                             | MSHTA spawned by SVCHOST as seen in LethalHTA                                                     | attack.defense_evasion attack.execution                       |
 | win_netsh_port_fwd                        | Netsh  Port Forwarding                                                                            | attack.lateral_movement attack.command_and_control            |
 | win_netsh_fw_add                          | Netsh Allow Incoming Connections by Port or Application on Windows Firewall                       | attack.lateral_movement attack.command_and_control            |
 | win_netsh_port_fwd_3389                   | Netsh RDP Port Forwarding of Port 3389 - RDP tunneling                                            | attack.lateral_movement                                       |
 | win_susp_gup                              | Notepad++ updater in an anomalous directory - possible DLL side-loading attack                    | attack.defense_evasion                                        |
-| win_susp_ping_hex_ip                      | Ping command using a hexidecimal IP address                                                       | attack.defense_evasion                                        |
+| win_susp_ping_hex_ip                      | Ping command using a hexadecimal IP address                                                       | attack.defense_evasion                                        |
 | win_possible_applocker_bypass             | Possible Applocker Bypass                                                                         | attack.defense_evasion                                        |
 | win_exploit_cve_2017_11882                | Possible CVE-2017-1882 exploit starting child processes from EQNEDT32.EXE                         | attack.defense_evasion                                        |
 | win_sdbinst_shim_persistence              | Possible shim database persistence via sdbinst.exe writing to default shim database path          | attack.persistence                                            |
 | win_wmi_spwns_powershell                  | Powershell activity by the WMI service                                                            | n                                                             |
-| win_susp_ps_appdata                       | Powershell activity in an AppData folder - suspicious powershell activity                         | attack.execution                                              |
+| win_susp_ps_appdata                       | Powershell activity in an AppData folder - suspicious Powershell activity                         | attack.execution                                              |
 | win_powershell_amsi_bypass                | Powershell AMSI bypass via .NET reflection - possible attempt to disable AMSI scanning            | n                                                             |
 | win_powershell_b64_shellcode              | PowerShell Base64 Encoded Shellcode                                                               | attack.defense_evasion                                        |
 | win_powershell_download                   | PowerShell Download from URL                                                                      | attack.execution                                              |
@@ -63,6 +63,6 @@
 | win_exploit_cve_2017_8759                 | Winword starting child process csc.exe - possible CVE-2017-8759 activity                          | attack.execution                                              |
 | win_exploit_cve_2017_0261                 | Winword starting child process FLTLDR.exe - possible CVE-2017-0261 or 2017-0262 activity          | attack.defense_evasion attack.privilege_escalation            |
 | win_exploit_cve_2015_1641                 | Winword starting child process MicroScMgmt.exe - possible CVE-2015-1641 activity                  | attack.defense_evasion                                        |
-| win_wmi_persistence_script_event_consumer | WMi script event consumer activity - possible WMI persistence                                     | attack.execution           attack.persistence                 |
+| win_wmi_persistence_script_event_consumer | WMI script event consumer activity - possible WMI persistence                                     | attack.execution           attack.persistence                 |
 | win_bypass_squiblytwo                     | WMI SquiblyTwo Attack                                                                             | attack.defense_evasion                                        |
 | win_malware_script_dropper                | WScript or CScript Dropper                                                                        | attack.defense_evasion attack.execution                       |
