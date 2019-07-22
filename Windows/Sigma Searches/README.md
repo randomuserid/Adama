@@ -1,7 +1,7 @@
 
 ### Rewritten Sigma Rules for ELK
 
-So I was asked to take a look at getting the Sigma rules working in ELK. There are syntax issues with things like wildcards and special characters and there appears to be limited support for ECS (the Elastic common schema) which is needed in order to make searches portable. These are rewrites of the Sigma rules for ELK in KQL (Kibana Query Language) and ECS from scratch; I have looked at the Sigma rules one by one and created new KQL searches that look for the same things. I have mapped the MITRE ATT&CK categories from the originals to the new searches.
+So I was asked to take a look at getting the Sigma rules working in ELK. These are rewrites of the Sigma rules for ELK in KQL (Kibana Query Language) and ECS (the Elastic common schema) which is needed in order to make searches portable. I wrote these from scratch after reviewing the Sigma rules one by one and creatimg new KQL searches that look for the same things. I have mapped the MITRE ATT&CK categories from the originals to the new searches.
 
 ### Contents
 
