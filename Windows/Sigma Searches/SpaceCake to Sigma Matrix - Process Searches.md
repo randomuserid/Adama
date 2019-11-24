@@ -11,7 +11,7 @@
 | Cmdkey Cached Credentials Recon                                                                   | attack.credential_access                                       | win_cmdkey_recon                          |
 | Command execution with URL and AppData parameters - possible dropper                              | attack.execution                                               | win_susp_cmd_http_appdata                 |
 | Command that clears the WMI trace log which indicates LockerGoga ransomware activity              | attack.execution                                               | win_etw_trace_evasion                     |
-| Empire PowerShell launch parameters - possible Empire activity                                    | attack.execution                                               | win_susp_powershell_empire_lanuch         |
+| Empire PowerShell launch parameters - possible Empire activity                                    | attack.execution                                               | win_susp_powershell_empire_launch         |
 | Execution of Renamed PaExec                                                                       | attack.defense_evasion                                         | win_renamed_paexec                        |
 | IIS Native-Code Module Command Line Installation                                                  | attack.persistence                                             | win_susp_iss_module_install               |
 | Java in in AppData folder as used by Adwind / JRAT                                                | attack.execution                                               | win_mal_adwind                            |
