@@ -1,4 +1,6 @@
-![things](/img/snorts.png?raw=true "text")### Suricata Searches
+![things](/img/snorts.png?raw=true "text")
+
+### Suricata Searches
 
 So we need a way to sift interesting Suricata / Snort detects at scale without using wildcards, something more discerning than returning all alerts with severity of one like this;
 
