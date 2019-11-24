@@ -11,7 +11,7 @@
 | Pass the hash activity in event logs - possible lateral movement                       | attack.lateral_movement     | win_pass_the_hash.yml                  |
 | Password change on a DSRM account - possible persistence                               | attack.persistence          | win_susp_dsrm_password_change.yml      |
 | Remote login by an admin user                                                          | attack.lateral_movement     | win_admin_rdp_login.yml                |
-| Ruler hacktool activity                                                                | attack.discovery            | win_alert_hacktool_use.yml             |
+| Ruler hacktool activity                                                                | attack.discovery            | win_alert_ruler.yml.                   |
 | Security event log was cleared                                                         | attack.defense_evasion      | win_susp_security_eventlog_cleared.yml |
 | SID history added to Active Directory object - possible privilege elevation            | attack.privilege_escalation | win_susp_add_sid_history.yml           |
 | smbexec.py service installed                                                           | attack.lateral_movement     | win_hack_smbexec.yml                   |
