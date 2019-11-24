@@ -1,8 +1,8 @@
-### Suricata Searches
+![things](/img/snorts.png?raw=true "text")### Suricata Searches
 
 So we need a way to sift interesting Suricata / Snort detects at scale without using wildcards, something more discerning than returning all alerts with severity of one like this;
 
-(event.module:suricata and event.kind:alert) and event.severity:1
+event.module:suricata and event.kind:alert and event.severity:1
 
 This search looks for a set of potentially interesting and relevant alerts in the emerging threats and the ptreseach attack detection rules meting these criteria:
 
