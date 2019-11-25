@@ -31,7 +31,7 @@
 | Possible shim database persistence via sdbinst.exe writing to default shim database path          | attack.persistence                                             | win_sdbinst_shim_persistence              |
 | Powershell activity by the WMI service                                                            | none                                                           | win_wmi_spwns_powershell                  |
 | Powershell activity in an AppData folder - suspicious Powershell activity                         | attack.execution                                               | win_susp_ps_appdata                       |
-| Powershell AMSI bypass via .NET reflection - possible attempt to disable AMSI scanning            | none                                                           | win_powershell_amsi_bypass                |
+| Powershell AMSI bypass via .NET reflection - possible attempt to disable AMSI scanning            | attack.execution,attack.defense_evasion                                                           | win_powershell_amsi_bypass                |
 | PowerShell Base64 Encoded Shellcode                                                               | attack.defense_evasion                                         | win_powershell_b64_shellcode              |
 | PowerShell Download from URL                                                                      | attack.execution                                               | win_powershell_download                   |
 | Powershell execution via a DLL                                                                    | attack.execution                                               | win_powershell_dll_execution              |
