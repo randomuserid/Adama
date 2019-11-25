@@ -29,7 +29,7 @@
 | Possible Applocker Bypass                                                                         | attack.defense_evasion                                         | win_possible_applocker_bypass             |
 | Possible CVE-2017-1882 exploit starting child processes from EQNEDT32.EXE                         | attack.defense_evasion                                         | win_exploit_cve_2017_11882                |
 | Possible shim database persistence via sdbinst.exe writing to default shim database path          | attack.persistence                                             | win_sdbinst_shim_persistence              |
-| Powershell activity by the WMI service                                                            | none                                                           | win_wmi_spwns_powershell                  |
+| Powershell activity by the WMI service                                                            | attack.defense_evasion,attack.execution                                                           | win_wmi_spwns_powershell                  |
 | Powershell activity in an AppData folder - suspicious Powershell activity                         | attack.execution                                               | win_susp_ps_appdata                       |
 | Powershell AMSI bypass via .NET reflection - possible attempt to disable AMSI scanning            | none                                                           | win_powershell_amsi_bypass                |
 | PowerShell Base64 Encoded Shellcode                                                               | attack.defense_evasion                                         | win_powershell_b64_shellcode              |
