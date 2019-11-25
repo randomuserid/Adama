@@ -15,7 +15,8 @@ TODO: Make one rule per SID so that it is easier to tune these by selectively en
 
 (event.module:suricata and event.kind:alert) and suricata.eve.alert.signature_id: (10004953 or 10004555 or 10004699 or 10004529 or 10004779 or 10004927 or 10004781 or 10004698 or 10004867 or 10004864 or 10005399 or 10004861 or 10005396 or 10004865 or 10005400 or 10004862 or 10005397 or 10004863 or 10005398 or 2027369 or 2027451 or 2027450 or 2027721 or 2026860 or 2027442 or 2027959 or 2027696 or 2028928 or 2027315 or 2027333 or 2028895 or 2027706 or 2027712 or 2027711 or 2027368 or 2027349 or 2027350 or 2027346 or 2027345)
 
-These are the Suricata rules matched by this search:
+These are the Suricata rules matched by this search.
+ATT&CK Categories: I am going to place all of these in the Initial Access / T1190: Exploit Public Facing Application category. 
 
 | SID      | Message                                                                                        |
 |----------|------------------------------------------------------------------------------------------------|
