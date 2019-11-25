@@ -2,14 +2,14 @@
 
 ### Snort / Suricata Searches
 
-So we need a way to sift interesting Suricata / Snort detects at scale without using wildcards, something more discerning than returning all alerts with severity of one like this;
+So we need a way to sift interesting Suricata / Snort detects at scale without using wildcards - and something more useful than returning all alerts with a severity of one like this;
 
 event.module:suricata and event.kind:alert and event.severity:1
 
 This search looks for a set of potentially interesting and relevant alerts in the emerging threats and the ptreseach attack detection rules meting these criteria:
 
-1. Rules that reference CVES from the year 2019 (my thinking is older CVEs are probably patched or blocked if security is taken seriously enough to run Suricata at scale) and
-2. Appear more or less enterprise relevant; IoT device attacks and less "enterprisey" uncommon software products are not included (yet.)
+1. Rules that reference CVES from the year 2019 (my thinking is older CVEs are probably patched or blocked if security is taken seriously enough to run IDS sensors at scale) and
+2. Appear more or less enterprise relevant; IoT device attacks and less "enterprisey" uncommon software products are not included (yet.) My reasoning: IDK many small businesses or home users running Suricata.
 
 TODO: Make one rule per SID so that it is easier to tune these by selectively enabling and disabling them. This is the search in KQL:
 
