@@ -53,7 +53,7 @@
 | Suspicious command activity by a web server process - possible web shell activity                 | none                                                           | win_webshell_detection                    |
 | Suspicious script file execution                                                                  | attack.execution                                               | win_susp_script_execution                 |
 | Suspicious Windows Parent  / Child Process Relationship                                           | attack.defense_evasion                                         | win_proc_wrong_parent                     |
-| Suspicious XOR Encoded PowerShell Command Line                                                    | attack.execution                                               | powershell_xor_commandline                |
+| Suspicious XOR Encoded PowerShell Command Line                                                    | attack.execution                                               | win_powershell_xor_commandline                |
 | Svchost process with anomalous parent process                                                     | none                                                           | win_susp_svchost                          |
 | Sysprep process activity in the AppData folder - possible Thrip activity                          | attack.defense_evasion                                         | win_susp_sysprep_appdata                  |
 | Taskmgr process activity by the SYSTEM account                                                    | attack.defense_evasion                                         | win_susp_taskmgr_localsystem              |
