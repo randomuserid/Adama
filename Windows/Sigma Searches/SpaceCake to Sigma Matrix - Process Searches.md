@@ -36,7 +36,7 @@
 | PowerShell Download from URL                                                                      | attack.execution                                               | win_powershell_download                   |
 | Powershell execution via a DLL                                                                    | attack.execution                                               | win_powershell_dll_execution              |
 | Powershell process started by a script interpreter                                                | attack.execution                                               | win_susp_powershell_parent_combo          |
-| Procdump activity on the lsass.exe process                                                        | attack.defense_evasion                                         | win_susp_procdump                         |
+| Procdump activity on the lsass.exe process                                                        | attack.defense_evasion,credential_access                                         | win_susp_procdump                         |
 | Process Execution in web server document root folder                                              | attack.persistence                                             | win_susp_execution_path_webserver         |
 | Process started by MMC - possible lateral movement using the MMC application's COM object         | attack.lateral_movement                                        | win_susp_mmc_source                       |
 | Process started by the Task Manager                                                               | attack.defense_evasion                                         | win_susp_taskmgr_parent                   |
