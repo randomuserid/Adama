@@ -2,6 +2,18 @@
 
 ### Snort / Suricata Searches
 
+Update: I have added 35 searches for a bunch of Suricata alerts from Travis Green's excellent hunting rules at https://github.com/travisbgreen/hunting-rules/blob/master/hunting.rules
+
+I've added a test to these five for a non-private Internet destination address in order to filter out noise from local web services and applications that may use non-standard ports. These searches look like this:
+
+| Name                                                        | Search in KQL                                                                                                                                                                                         |
+|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Suricata FTP Traffic on Unusual Port, Internet Destination  | suricata.eve.alert.signature_id:2610005 and (event.module:suricata and event.kind:alert) and not destination.ip:10.0.0.0/8 and not destination.ip:172.16.0.0/12 and not destination.ip:192.168.0.0/16 |
+| Suricata HTTP On Unusual Port, Internet Destination         | suricata.eve.alert.signature_id:2610001 and (event.module:suricata and event.kind:alert) and not destination.ip:10.0.0.0/8 and not destination.ip:172.16.0.0/12 and not destination.ip:192.168.0.0/16 |
+| Suricata IMAP Traffic on Unusual Port, internet Destination | suricata.eve.alert.signature_id:2610009 and (event.module:suricata and event.kind:alert) and not destination.ip:10.0.0.0/8 and not destination.ip:172.16.0.0/12 and not destination.ip:192.168.0.0/16 |
+| Suricata SSH Traffic Not on Port 22, Internet Destination   | suricata.eve.alert.signature_id:2610007 and (event.module:suricata and event.kind:alert) and not destination.ip:10.0.0.0/8 and not destination.ip:172.16.0.0/12 and not destination.ip:192.168.0.0/16 |
+| Suricata TLS on Unusual Port, Internet Destination          | suricata.eve.alert.signature_id:2610003 and (event.module:suricata and event.kind:alert) and not destination.ip:10.0.0.0/8 and not destination.ip:172.16.0.0/12 and not destination.ip:192.168.0.0/16 |
+
 So we need a way to sift interesting Suricata / Snort detects at scale without using wildcards - and something more useful than returning all alerts with a severity of one like this;
 
 event.module:suricata and event.kind:alert and event.severity:1
@@ -16,7 +28,7 @@ TODO: Make one rule per SID so that it is easier to tune these by selectively en
 (event.module:suricata and event.kind:alert) and suricata.eve.alert.signature_id: (10004953 or 10004555 or 10004699 or 10004529 or 10004779 or 10004927 or 10004781 or 10004698 or 10004867 or 10004864 or 10005399 or 10004861 or 10005396 or 10004865 or 10005400 or 10004862 or 10005397 or 10004863 or 10005398 or 2027369 or 2027451 or 2027450 or 2027721 or 2026860 or 2027442 or 2027959 or 2027696 or 2028928 or 2027315 or 2027333 or 2028895 or 2027706 or 2027712 or 2027711 or 2027368 or 2027349 or 2027350 or 2027346 or 2027345)
 
 These are the Suricata rules matched by this search.
-ATT&CK Categories: I am going to place all of these in the Initial Access / T1190: Exploit Public Facing Application category. 
+ATT&CK Categories: I am going to place all of these in the Initial Access / T1190: Exploit Public Facing Application category.
 
 | SID      | Message                                                                                        |
 |----------|------------------------------------------------------------------------------------------------|
