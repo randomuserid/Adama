@@ -2,7 +2,9 @@
 
 ### Snort / Suricata Searches
 
-Update: I have added 35 searches for a bunch of Suricata alerts from Travis Green's excellent hunting rules at https://github.com/travisbgreen/hunting-rules/blob/master/hunting.rules
+Update: I have added 35 searches for a bunch of Suricata alerts from Travis Green's excellent hunting rules at https://github.com/travisbgreen/hunting-rules/blob/master/hunting.rules - these rules need to be enabled with this command:
+
+`suricata-update -add-source tgreen/hunting`
 
 I've added a test to these five for a non-private Internet destination address in order to filter out noise from local web services and applications that may use non-standard ports. These searches look like this:
 
