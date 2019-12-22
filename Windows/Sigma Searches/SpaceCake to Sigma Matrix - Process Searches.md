@@ -38,7 +38,7 @@
 | Powershell process started by a script interpreter                                                | attack.execution                                               | win_susp_powershell_parent_combo          |
 | Procdump activity on the lsass.exe process                                                        | attack.defense_evasion                                         | win_susp_procdump                         |
 | Process Execution in web server document root folder                                              | attack.persistence                                             | win_susp_execution_path_webserver         |
-| Process started by MMC - possible lateral movement using the MMC application's COM object         | attack.lateral_movement                                        | win_susp_mmc_source                       |
+| Process started by MMC - possible lateral movement using the MMC application's COM object         | attack.lateral_movement                                        | win_mmc_spawn_shell                       |
 | Process started by the Task Manager                                                               | attack.defense_evasion                                         | win_susp_taskmgr_parent                   |
 | Process started by the terminal service server - possible Bluekeep CVE-2019-0708 exploit activity | car.2013-07-002                                                | win_termserv_proc_spawn                   |
 | PsExec Service Start                                                                              | attack.execution                                               | win_psexesvc_start                        |
