@@ -46,7 +46,7 @@
 | RDP session redirect activity using TSCON                                                         | attack.lateral_movement, attack.privilege_escalation           | win_susp_tscon_rdp_redirect               |
 | Renamed Powershell.exe                                                                            | attack.execution                                               | win_powershell_renamed_ps                 |
 | Rundll32 execution from control.exe as used by Equation Group and Exploit Kits                    | attack.defense_evasion                                         | win_susp_control_dll_load                 |
-| Scheduled task creation by a user                                                                 | attack.execution, attack.persistence                           | win_susp_schtask_creation                 |
+| Scheduled task creation by a user                                                                 | attack.execution, attack.persistence,attack.privilege_escalation,car.2013-08-001                           | win_susp_schtask_creation                 |
 | Service principal name enumeration - possible Kerberoasting                                       | attack.credential_access                                       | win_spn_enum                              |
 | Shell process started by a web server - possible web shell or web exploit activity                | none                                                           | win_webshell_spawn                        |
 | SHTA Spawning Windows Shell                                                                       | attack.defense_evasion, attack.execution                       | win_mshta_spawn_shell                     |
