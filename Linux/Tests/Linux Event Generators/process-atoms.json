@@ -1,0 +1,78 @@
+[
+    {
+        "name" : "whoami",
+        "execve" : [ "whoami"]
+    },
+    {
+        "name" : "hping3",
+        "execve" : [ "hping3", "--help"]
+    },
+    {
+        "name" : "iodine",
+        "execve" : [ "iodine", "-h"]
+    },
+    {
+        "name" : "insmod",
+        "execve" : [ "insmod", "-h"]
+    },
+    {
+        "name" : "kmod",
+        "execve" : [ "kmod", "-h"]
+    },
+    {
+        "name" : "ld.so",
+        "execve" : [ "/lib64/ld-linux-x86-64.so.2"]
+    },
+    {
+        "name" : "mknod",
+        "execve" : [ "mknod", "--help"]
+    },
+    {
+        "name" : "modprobe",
+        "execve" : [ "modprobe", "-h"]
+    },
+    {
+        "name" : "ld.so.conf",
+        "execve" : [ "vi", "/etc/ld.so.conf"]
+    },
+    {
+        "name" : "nmap",
+        "execve" : [ "nmap"]
+    },
+    {
+        "name" : "nping",
+        "execve" : [ "nping"]
+    },
+    {
+        "name" : "rmmod",
+        "execve" : [ "rmmod", "-h"]
+    },
+    {
+        "name" : "socat",
+        "execve" : [ "socat", "-h"]
+    },
+    {
+        "name" : "strace",
+        "execve" : [ "strace", "-h"]
+    },
+    {
+        "name" : "tcpdump",
+        "execve" : [ "tcpdump", "-h"]
+    },
+    {
+        "name" : "netcat",
+        "execve" : [ "nc", "localhost", "22", "exit" ]
+    },
+    {
+        "name" : "visible",
+        "copy" : [ "/proc/self/exe", "/tmp/visible"],
+        "execve" : [ "/tmp/visible", "exit" ],
+        "remove" : [ "/tmp/visible" ]
+    },
+    {
+        "name" : "hidden",
+        "copy" : [ "/proc/self/exe", "/tmp/.hidden"],
+        "execve" : [ "/tmp/.hidden", "exit" ],
+        "remove" : [ "/tmp/.hidden" ]
+    }
+]

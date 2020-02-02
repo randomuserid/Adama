@@ -1,0 +1,23 @@
+{
+    "name": "linux",
+    "atoms": [
+        "whoami",
+        "hping3",
+        "iodine",
+        "insmod",
+        "kmod",
+        "ld.so",
+        "mknod",
+        "modprobe",
+	      "ld.so.conf",
+        "nmap",
+        "nping",
+        "rmmod",
+        "socat",
+        "strace",
+        "tcpdump",
+        "netcat",
+        "visible",
+        "hidden"
+    ]
+}
