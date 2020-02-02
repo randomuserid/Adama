@@ -1,0 +1,119 @@
+[
+    {
+        "name" : "DNS-TCP4",
+        "connect" : { "method": "socketcall", "protocol": "tcp4", "address": "8.8.8.8", "port": 53 }
+    },
+    {
+        "name" : "DNS2-TCP4",
+        "connect" : { "method": "socketcall", "protocol": "tcp4", "address": "connect.tcp.socketcall.ipv4.8.8.8.8.xip.io", "port": 53 }
+    },
+    {
+        "name" : "DNS-UDP4",
+        "connect" : { "method": "syscall", "protocol": "udp4", "address": "1.1.1.1", "port": 53 }
+    },
+    {
+        "name" : "DNS2-UDP4",
+        "connect" : { "method": "syscall", "protocol": "udp4", "address": "connect.udp.syscall.ipv4.1.1.1.1.xip.io", "port": 53 }
+    },
+    {
+        "name" : "DNS-UDP6",
+        "connect" : { "method": "syscall", "protocol": "udp6", "address": "1.0.0.1", "port": 53 }
+    },
+    {
+        "name" : "DNS2-UDP6",
+        "connect" : { "method": "syscall", "protocol": "udp6", "address": "connect.udp.syscall.ipv6.1.0.0.1.xip.io", "port": 53 }
+    },
+    {
+        "name" : "DNS-TCP6",
+        "connect" : { "method": "socketcall", "protocol": "tcp6", "address": "8.8.4.4", "port": 53 }
+    },
+    {
+        "name" : "DNS2-TCP6",
+        "connect" : { "method": "socketcall", "protocol": "tcp6", "address": "connect.tcp.socketcall.ipv6.8.8.4.4.xip.io", "port": 53 }
+    },
+    {
+        "name" : "FTP",
+        "connect" : { "method": "syscall", "protocol": "tcp4", "address": "ftp.cs.brown.edu", "port": 21 }
+    },
+    {
+        "name" : "IRC1",
+        "connect" : { "method": "syscall", "protocol": "tcp4", "address": "irc.us.ircnet.net", "port": 6667 }
+    },
+    {
+        "name" : "IRC2",
+        "connect" : { "method": "syscall", "protocol": "tcp4", "address": "irc.us.ircnet.net", "port": 6668 }
+    },
+    {
+        "name" : "IRC3",
+        "connect" : { "method": "syscall", "protocol": "tcp4", "address": "irc.us.ircnet.net", "port": 6669 }
+    },
+    {
+        "name" : "NAT",
+        "connect" : { "method": "syscall", "protocol": "tcp4", "address": "127.0.0.1", "port": 4500 }
+    },
+    {
+        "name" : "8000",
+        "connect" : { "method": "syscall", "protocol": "tcp4", "address": "127.0.0.1", "port": 8000 }
+    },
+    {
+        "name" : "26",
+        "connect" : { "method": "syscall", "protocol": "tcp4", "address": "127.0.0.1", "port": 26 }
+    },
+    {
+        "name" : "PPTP",
+        "connect" : { "method": "syscall", "protocol": "tcp4", "address": "127.0.0.1", "port": 1723 }
+    },
+    {
+        "name" : "PROXY",
+        "connect" : { "method": "syscall", "protocol": "tcp4", "address": "127.0.0.1", "port": 8080 }
+    },
+    {
+        "name" : "PROXY2",
+        "connect" : { "method": "syscall", "protocol": "tcp4", "address": "127.0.0.1", "port": 3128 }
+    },
+    {
+        "name" : "RDP",
+        "connect" : { "method": "syscall", "protocol": "tcp6", "address": "127.0.0.1", "port": 3389 }
+    },
+    {
+        "name" : "RPC",
+        "connect" : { "method": "syscall", "protocol": "tcp6", "address": "127.0.0.1", "port": 135 }
+    },
+    {
+        "name" : "SMB",
+        "connect" : { "method": "socketcall", "protocol": "udp4", "address": "127.0.0.1", "port": 139 }
+    },
+    {
+        "name" : "SMB2",
+        "connect" : { "method": "socketcall", "protocol": "udp4", "address": "127.0.0.1", "port": 445 }
+    },
+    {
+        "name" : "SMTP",
+        "connect" : { "method": "socketcall", "protocol": "udp4", "address": "127.0.0.1", "port": 25 }
+    },
+    {
+        "name" : "SQL",
+        "connect" : { "method": "socketcall", "protocol": "udp6", "address": "127.0.0.1", "port": 1433 }
+    },
+    {
+        "name" : "SSH",
+        "connect" : { "method": "socketcall", "protocol": "udp6", "address": "127.0.0.1", "port": 22 }
+    },
+    {
+        "name" : "TELNET",
+        "connect" : { "method": "socketcall", "protocol": "udp4", "address": "127.0.0.1", "port": 139 }
+    },
+    {
+        "name" : "TOR1",
+        "connect" : { "method": "socketcall", "protocol": "udp4", "address": "127.0.0.1", "port": 9001 }
+    },
+    {
+        "name" : "TOR2",
+        "connect" : { "method": "socketcall", "protocol": "udp4", "address": "127.0.0.1", "port": 9030 }
+    },
+    {
+        "name" : "VNC",
+        "connect" : { "method": "socketcall", "protocol": "udp4", "address": "127.0.0.1", "port": 5800 }
+    }
+
+]
