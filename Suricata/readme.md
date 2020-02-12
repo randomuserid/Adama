@@ -27,7 +27,7 @@ This search looks for a set of potentially interesting and relevant alerts in th
 
 TODO: Make one rule per SID so that it is easier to tune these by selectively enabling and disabling them. This is the search in KQL:
 
-(event.module:suricata and event.kind:alert) and suricata.eve.alert.signature_id:  {10004953 or 10004555 or 10004699 or 10004529 or 10004779 or 10004927 or 10004781 or 10004698 or 10004867 or 10004864 or 10005399 or 10004861 or 10005396 or 10004865 or 10005400 or 10004862 or 10005397 or 10004863 or 10005398 or 2027369 or 2027451 or 2027450 or 2029159 or 2029158 or 2027721 or 2029207 or 2026860 or 2029206 or 2029255 or 2027442 or 2028636 or 2027959 or 2027960 or 2028933 or 2027696 or 2027904 or 2028621 or 2028825 or 2028826 or 2028928 or 2029153 or 2029152 or 2027315 or 2027333 or 2028895 or 2027896 or 2027706 or 2027712 or 2027711 or 2027368 or 2027349 or 2027350 or 2027346 or 2027345 or 2027096)
+(event.module:suricata and event.kind:alert) and suricata.eve.alert.signature_id:  {10004953 or 10004555 or 10004699 or 10004529 or 10004779 or 10004927 or 10004781 or 10004698 or 10004867 or 2027369 or 2027451 or 2027450 or 2029159 or 2029158 or 2027721 or 2029207 or 2026860 or 2029206 or 2029255 or 2027442 or 2028636 or 2027959 or 2027960 or 2028933 or 2027696 or 2027904 or 2028621 or 2028825 or 2028826 or 2028928 or 2029153 or 2029152 or 2027315 or 2027333 or 2028895 or 2027896 or 2027706 or 2027712 or 2027711 or 2027368 or 2027349 or 2027350 or 2027346 or 2027345 or 2027096)
 
 These are the Suricata rules matched by this search.
 ATT&CK Categories: I am going to place all of these in the Initial Access / T1190: Exploit Public Facing Application category.
@@ -43,16 +43,6 @@ ATT&CK Categories: I am going to place all of these in the Initial Access / T119
 | 10004781 | ATTACK [PTsecurity] Oracle Weblogic file upload RCE (CVE-2019-2618)                                             |
 | 10004698 | ATTACK [PTsecurity] Possible Apache Axis RCE via SSRF (CVE-2019-0227)                                           |
 | 10004867 | ATTACK [PTsecurity] Possible Bluekeep RDP exploit CVE-2019-0708                                                 |
-| 10004864 | ATTACK [PTsecurity] Possible Bluekeep RDP exploit CVE-2019-0708 (MCS Channel Join Requests)                     |
-| 10005399 | ATTACK [PTsecurity] Possible Bluekeep RDP exploit CVE-2019-0708 (MCS Channel Join Requests)                     |
-| 10004861 | ATTACK [PTsecurity] Possible Bluekeep RDP exploit CVE-2019-0708 (pkt #1)                                        |
-| 10005396 | ATTACK [PTsecurity] Possible Bluekeep RDP exploit CVE-2019-0708 (pkt #1)                                        |
-| 10004865 | ATTACK [PTsecurity] Possible Bluekeep RDP exploit CVE-2019-0708 (pkt #12)                                       |
-| 10005400 | ATTACK [PTsecurity] Possible Bluekeep RDP exploit CVE-2019-0708 (pkt #12)                                       |
-| 10004862 | ATTACK [PTsecurity] Possible Bluekeep RDP exploit CVE-2019-0708 (pkt #2)                                        |
-| 10005397 | ATTACK [PTsecurity] Possible Bluekeep RDP exploit CVE-2019-0708 (pkt #2)                                        |
-| 10004863 | ATTACK [PTsecurity] Possible Bluekeep RDP exploit CVE-2019-0708 (pkt #3)                                        |
-| 10005398 | ATTACK [PTsecurity] Possible Bluekeep RDP exploit CVE-2019-0708 (pkt #3)                                        |
 | 2027369  | ET EXPLOIT [NCC GROUP] Possible Bluekeep Inbound RDP Exploitation Attempt (CVE-2019-0708)                       |
 | 2027451  | ET EXPLOIT Attempted Remote Command Injection Inbound (CVE-2019-3929)                                           |
 | 2027450  | ET EXPLOIT Attempted Remote Command Injection Outbound (CVE-2019-3929)                                          |
