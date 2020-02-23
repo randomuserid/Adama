@@ -2,8 +2,8 @@
 
 So MSBuild, the Microsoft Build Engine, is being increasingly used for execution and persistence. This is a collection of searches in KQL (Kibana) format (in the ndjson file) that were translated from a wide variety of sources (see references.) Let's start with Execution.
 
-MITRE ATT&CK Techniques:
-T1127 - Trusted Developer Utilities
+#MITRE ATT&CK Techniques:
+#T1127 - Trusted Developer Utilities
 
 Suspicious MSBuild Process Execution
 
@@ -15,11 +15,11 @@ process.name: MSBuild.exe and process.parent.name: wmiprvse.exe
 
 T1036 - Masquerading - Microsoft Build Engine Executed After Renaming
 
-winlog.event_data.OriginalFileName:MSBuild.exe and not process.name: MSBuild.exe
+`winlog.event_data.OriginalFileName:MSBuild.exe and not process.name: MSBuild.exe`
 
 T1500 - Compile After Delivery - Defense Evasion Using the Microsoft Build Engine
 
-process.parent.name: MSBuild.exe and process.name: (csc.exe or iexplore.exe or powershell.exe)
+`process.parent.name: MSBuild.exe and process.name: (csc.exe or iexplore.exe or powershell.exe)`
 
 T1003  - Credential Dumping - Credential Dumping Using the Microsoft Build Engine
 
