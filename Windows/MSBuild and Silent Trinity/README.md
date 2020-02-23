@@ -1,9 +1,9 @@
-## Searches for MSBuild LOLBin Activity and SILENTTRINITY
+# Searches for MSBuild LOLBin Activity and SILENTTRINITY
 
 So MSBuild, the Microsoft Build Engine, is being increasingly used for execution and persistence. This is a collection of searches in KQL (Kibana) format (in the ndjson file) that were translated from a wide variety of sources (see references.) Let's start with Execution.
 
-### MITRE ATT&CK Techniques:
-### T1127 - Trusted Developer Utilities
+MITRE ATT&CK Techniques:
+T1127 - Trusted Developer Utilities
 
 Suspicious MSBuild Process Execution
 
