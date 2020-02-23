@@ -1,17 +1,17 @@
-### Searches for MSBuild LOLBin Activity and SILENTTRINTIY
+### Searches for MSBuild LOLBin Activity and SILENTTRINITY
 
 So MSBuild, the Microsoft Build Engine, is being increasingly used for execution and persistence. This is a collection of searches in KQL (Kibana) format (in the ndjson file) that were translated from a wide variety of sources (see references.) Let's start with Execution.
 
-#MITRE ATT&CK Techniques:
-#T1127 - Trusted Developer Utilities
+# MITRE ATT&CK Techniques:
+# T1127 - Trusted Developer Utilities
 
 Suspicious MSBuild Process Execution
 
-process.name: MSBuild.exe and process.parent.name: (cmd.exe or powershell.exe)
+`process.name: MSBuild.exe and process.parent.name: (cmd.exe or powershell.exe)
 process.name: MSBuild.exe and process.parent.name: (excel.exe or winword.exe)
 process.name: MSBuild.exe and process.parent.name: explorer.exe
 process.name: MSBuild.exe and process.parent.name: mshta.exe
-process.name: MSBuild.exe and process.parent.name: wmiprvse.exe
+process.name: MSBuild.exe and process.parent.name: wmiprvse.exe`
 
 T1036 - Masquerading - Microsoft Build Engine Executed After Renaming
 
@@ -23,29 +23,31 @@ T1500 - Compile After Delivery - Defense Evasion Using the Microsoft Build Engin
 
 T1003  - Credential Dumping - Credential Dumping Using the Microsoft Build Engine
 
-winlog.event_data.OriginalFileName: (vaultcli.dll or samlib.dll) and process.name:MSBuild.exe and event.action:"Image loaded (rule: ImageLoad)"
+`winlog.event_data.OriginalFileName: (vaultcli.dll or samlib.dll) and process.name:MSBuild.exe and event.action:"Image loaded (rule: ImageLoad)"``
 
 T1055 - Process Injection - Process Injection By the Microsoft Build Engine
 
-process.name:MSBuild.exe and event.action:"CreateRemoteThread detected (rule: CreateRemoteThread)"
+`process.name:MSBuild.exe and event.action:"CreateRemoteThread detected (rule: CreateRemoteThread)"``
 
 Inline Task Activity - 	Image Loading By the Microsoft Build Engine
 
-process.name:MSBuild.exe and event.action:"Image loaded (rule: ImageLoad)" and file.path:*Microsoft.Build.Tasks.v4.0.ni.dll*
+`process.name:MSBuild.exe and event.action:"Image loaded (rule: ImageLoad)" and file.path:*Microsoft.Build.Tasks.v4.0.ni.dll*``
 
 Command and Control - Possible C2 Using the Microsoft Build Engine
 T1043 - Commonly Used Port
 T1071 - Standard Application Layer Protocol
 
-process.name: MSBuild.exe and event.action:"Network connection detected (rule: NetworkConnect)"
+`process.name: MSBuild.exe and event.action:"Network connection detected (rule: NetworkConnect)"``
 
 SILENTTRINTIY is a recent persistence mechanism that utilizes MSBuild along with Iron Python. It makes use of the libraries below but of course these could be renamed so these Image Load events are probably best regarded as secondary indicators to be combined with process or network activity searches above.
 
 Search: Possible SILENTTRINITY Activity Using Iron Python
 
-winlog.event_data.OriginalFileName: (IronPython.dll or IronPythonModules.dll) and event.action:"Image loaded (rule: ImageLoad)"
+`winlog.event_data.OriginalFileName: (IronPython.dll or IronPythonModules.dll) and event.action:"Image loaded (rule: ImageLoad)"``
 
 "MSBuild Without MSBuild" is also interesting and needs a behavioral search: https://pentestlaboratories.com/2020/01/27/msbuild-without-msbuild/
+
+references
 
 https://github.com/MHaggis/CBR-Queries/blob/master/msbuild.md
 https://twitter.com/M_haggis/status/1225853330045333504?s=20
