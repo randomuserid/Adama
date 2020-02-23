@@ -34,8 +34,8 @@ Inline Task Activity - 	Image Loading By the Microsoft Build Engine
 `process.name:MSBuild.exe and event.action:"Image loaded (rule: ImageLoad)" and file.path:*Microsoft.Build.Tasks.v4.0.ni.dll*`
 
 Command and Control - Possible C2 Using the Microsoft Build Engine
-T1043 - Commonly Used Port
-T1071 - Standard Application Layer Protocol
+- T1043 - Commonly Used Port
+- T1071 - Standard Application Layer Protocol
 
 `process.name: MSBuild.exe and event.action:"Network connection detected (rule: NetworkConnect)"`
 
