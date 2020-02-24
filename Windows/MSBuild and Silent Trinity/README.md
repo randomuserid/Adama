@@ -7,12 +7,16 @@ T1127 - Trusted Developer Utilities
 
 Suspicious MSBuild Process Execution
 
-`process.name: MSBuild.exe and process.parent.name: (cmd.exe or powershell.exe)
+`process.name: MSBuild.exe and process.parent.name: (cmd.exe or powershell.exe)  
 
-process.name: MSBuild.exe and process.parent.name: (excel.exe or winword.exe)
+
+process.name: MSBuild.exe and process.parent.name: (excel.exe or winword.exe)  
+
 
 process.name: MSBuild.exe and process.parent.name: explorer.exe
+
 process.name: MSBuild.exe and process.parent.name: mshta.exe
+
 process.name: MSBuild.exe and process.parent.name: wmiprvse.exe`
 
 T1036 - Masquerading - Microsoft Build Engine Executed After Renaming
