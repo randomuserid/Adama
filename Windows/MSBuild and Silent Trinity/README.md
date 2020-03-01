@@ -1,23 +1,23 @@
 # Hunting for MSBuild LOLBin Activity and SILENTTRINITY
 
-So MSBuild, the Microsoft Build Engine, is being increasingly used for execution and persistence. This is a collection of searches in KQL (Kibana) format (in the ndjson file) that were translated from a wide variety of sources (see references.) Let's start with Execution.
+So MSBuild, the Microsoft Build Engine, is being increasingly used for execution and persistence. This is a collection of searches and rules that were translated from a wide variety of sources (see references.) The SIEM rules are populated with ATT&CK tags and can be imported in the "Signal Detection Rules" page. The searches can be imported as usual in the Kibana Saved Objects page.
 
-MITRE ATT&CK Techniques:
+Let's start with Execution:
 T1127 - Trusted Developer Utilities
 
 Suspicious MSBuild Process Execution
 
-`process.name: MSBuild.exe and process.parent.name: (cmd.exe or powershell.exe)  
+- `process.name: MSBuild.exe and process.parent.name: (cmd.exe or powershell.exe)`
 
 
-process.name: MSBuild.exe and process.parent.name: (excel.exe or winword.exe)  
+- `process.name: MSBuild.exe and process.parent.name: (excel.exe or winword.exe)`
 
 
-process.name: MSBuild.exe and process.parent.name: explorer.exe
+`process.name: MSBuild.exe and process.parent.name: explorer.exe`
 
-process.name: MSBuild.exe and process.parent.name: mshta.exe
+`process.name: MSBuild.exe and process.parent.name: mshta.exe`
 
-process.name: MSBuild.exe and process.parent.name: wmiprvse.exe`
+`process.name: MSBuild.exe and process.parent.name: wmiprvse.exe`
 
 T1036 - Masquerading - Microsoft Build Engine Executed After Renaming
 
