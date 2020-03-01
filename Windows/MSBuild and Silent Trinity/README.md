@@ -13,11 +13,11 @@ Suspicious MSBuild Process Execution
 - `process.name: MSBuild.exe and process.parent.name: (excel.exe or winword.exe)`
 
 
-`process.name: MSBuild.exe and process.parent.name: explorer.exe`
+- `process.name: MSBuild.exe and process.parent.name: explorer.exe`
 
-`process.name: MSBuild.exe and process.parent.name: mshta.exe`
+- `process.name: MSBuild.exe and process.parent.name: mshta.exe`
 
-`process.name: MSBuild.exe and process.parent.name: wmiprvse.exe`
+- `process.name: MSBuild.exe and process.parent.name: wmiprvse.exe`
 
 T1036 - Masquerading - Microsoft Build Engine Executed After Renaming
 
@@ -55,11 +55,11 @@ Search: Possible SILENTTRINITY Activity Using Iron Python
 
 references
 
-https://github.com/MHaggis/CBR-Queries/blob/master/msbuild.md
-https://twitter.com/M_haggis/status/1225853330045333504?s=20
-https://gist.github.com/SwitHak/62fa7f8df378cae3a459670e3a18742d
-https://blog.f-secure.com/hunting-for-silenttrinity/
-https://blog.talosintelligence.com/2020/02/building-bypass-with-msbuild.html
-https://github.com/byt3bl33d3r/SILENTTRINITY
-https://github.com/rvrsh3ll/MSBuildAPICaller
-https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild?view%253Dvs-2019=&view=vs-2019
+- https://github.com/MHaggis/CBR-Queries/blob/master/msbuild.md
+- https://twitter.com/M_haggis/status/1225853330045333504?s=20
+- https://gist.github.com/SwitHak/62fa7f8df378cae3a459670e3a18742d
+- https://blog.f-secure.com/hunting-for-silenttrinity/
+- https://blog.talosintelligence.com/2020/02/building-bypass-with-msbuild.html
+- https://github.com/byt3bl33d3r/SILENTTRINITY
+- https://github.com/rvrsh3ll/MSBuildAPICaller
+- https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild?view%253Dvs-2019=&view=vs-2019
