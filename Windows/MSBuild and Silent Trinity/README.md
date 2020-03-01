@@ -1,4 +1,4 @@
-# Searches for MSBuild LOLBin Activity and SILENTTRINITY
+# Hunting for MSBuild LOLBin Activity and SILENTTRINITY
 
 So MSBuild, the Microsoft Build Engine, is being increasingly used for execution and persistence. This is a collection of searches in KQL (Kibana) format (in the ndjson file) that were translated from a wide variety of sources (see references.) Let's start with Execution.
 
@@ -7,10 +7,16 @@ T1127 - Trusted Developer Utilities
 
 Suspicious MSBuild Process Execution
 
-`process.name: MSBuild.exe and process.parent.name: (cmd.exe or powershell.exe)
-process.name: MSBuild.exe and process.parent.name: (excel.exe or winword.exe)
+`process.name: MSBuild.exe and process.parent.name: (cmd.exe or powershell.exe)  
+
+
+process.name: MSBuild.exe and process.parent.name: (excel.exe or winword.exe)  
+
+
 process.name: MSBuild.exe and process.parent.name: explorer.exe
+
 process.name: MSBuild.exe and process.parent.name: mshta.exe
+
 process.name: MSBuild.exe and process.parent.name: wmiprvse.exe`
 
 T1036 - Masquerading - Microsoft Build Engine Executed After Renaming
@@ -34,8 +40,8 @@ Inline Task Activity - 	Image Loading By the Microsoft Build Engine
 `process.name:MSBuild.exe and event.action:"Image loaded (rule: ImageLoad)" and file.path:*Microsoft.Build.Tasks.v4.0.ni.dll*`
 
 Command and Control - Possible C2 Using the Microsoft Build Engine
-T1043 - Commonly Used Port
-T1071 - Standard Application Layer Protocol
+- T1043 - Commonly Used Port
+- T1071 - Standard Application Layer Protocol
 
 `process.name: MSBuild.exe and event.action:"Network connection detected (rule: NetworkConnect)"`
 
