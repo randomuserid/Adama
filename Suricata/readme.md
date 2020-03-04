@@ -2,11 +2,11 @@
 
 ### Snort / Suricata Rules
 
-Update: I have made eight siem rules for interesting Suricata alerts. Three are for very recent exploits like Ghostcat and the Exchange RCE. Five are alerts from from Travis Green's excellent hunting rules at https://github.com/travisbgreen/hunting-rules/blob/master/hunting.rules - these rules need to be enabled with this command:
+Update: I have made the first eight Elastic SIEM rules for interesting Suricata alerts. Three are for very recent exploits in the Emerging Threats rules like Ghostcat and the Exchange RCE. Five utilize Travis Green's excellent hunting rules at https://github.com/travisbgreen/hunting-rules/blob/master/hunting.rules - these rules need to be enabled with this command:
 
 `suricata-update -add-source tgreen/hunting`
 
-I've added a test to five for a non-private Internet destination address in order to filter out noise from local web services and applications that may use non-standard ports. These searches look like this:
+I've added a test to these five for a non-private Internet destination address in order to filter out noise from local web services and applications that may use non-standard ports. These searches look like this:
 
 | Name                                                              | Search                                                                                                                                                                                          |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
