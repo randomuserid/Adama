@@ -14,7 +14,7 @@ Finally, termination of either process can be detected using Sysmon event 5, Pro
 - `process.name: (Sysmon64.exe or Sysmon.exe) and event.action: "Process terminated (rule: ProcessTerminate)"`
 - `process.name:winlogbeat.exe and event.action: "Process terminated (rule: ProcessTerminate)"`
 
-All of these are in the Tampering.ndjson SIEM rules file. References:
+All of these are in the tampering.ndjson SIEM rules file. References:
 
 - https://twitter.com/dottor_morte/status/1243134039772606464?s=20
 - https://riccardoancarani.github.io/2020-03-21-fooling-the-blue-team-abusing-insecure-elk/
