@@ -9,9 +9,7 @@ Suspicious MSBuild Process Execution
 
 - `process.name: MSBuild.exe and process.parent.name: (cmd.exe or powershell.exe)`
 
-
 - `process.name: MSBuild.exe and process.parent.name: (excel.exe or winword.exe)`
-
 
 - `process.name: MSBuild.exe and process.parent.name: explorer.exe`
 

@@ -1,30 +1,23 @@
 # Detecting attacks on Sysmon and Winlogbeat
 
-Recent research was published on on methods of selectively deleting messages in the Sysmon / Winlogbeat queue. This technique requires injecting the Winlogbeat process which can be detected with Sysmon event 7, CreateRemoteThread detected, like this:
+Recent research was published on on methods of selectively deleting messages in the Sysmon / Winlogbeat queue. The most technique which allows for selective message manipulation requires injecting the Winlogbeat process which can be detected with Sysmon event 7, CreateRemoteThread detected, like this:
 
 - `winlog.event_data.TargetImage:*winlogbeat.exe and event.action:"CreateRemoteThread detected (rule: CreateRemoteThread)"``
 
-T1036 - Masquerading - Microsoft Build Engine Executed After Renaming
+Changes to the Sysmon and Winlogbeat configuration files could also lead to classes of events being dropped. These can be detected with Sysmon event 11, File created;
 
-`winlog.event_data.OriginalFileName:MSBuild.exe and not process.name: MSBuild.exe`
+- `event.action: "File created (rule: FileCreate)" and file.path: *Sysmon* and *xml`
+- `event.action: "File created (rule: FileCreate)" and file.path: *winlogbeat* and *yml`
 
-T1055 - Process Injection - Process Injection By the Microsoft Build Engine
+Finally, termination of either process can be detected using Sysmon event 5, Process terminated:
 
-`process.name:MSBuild.exe and event.action:"CreateRemoteThread detected (rule: CreateRemoteThread)"`
+- `process.name: (Sysmon64.exe or Sysmon.exe) and event.action: "Process terminated (rule: ProcessTerminate)"`
+- `process.name:winlogbeat.exe and event.action: "Process terminated (rule: ProcessTerminate)"`
 
-Inline Task Activity - 	Image Loading By the Microsoft Build Engine
+All of these are in the Tampering.ndjson SIEM rules file. References:
 
-`process.name:MSBuild.exe and event.action:"Image loaded (rule: ImageLoad)" and file.path:*Microsoft.Build.Tasks.v4.0.ni.dll*`
-
-
-
-references
-
-- https://github.com/MHaggis/CBR-Queries/blob/master/msbuild.md
-- https://twitter.com/M_haggis/status/1225853330045333504?s=20
-- https://gist.github.com/SwitHak/62fa7f8df378cae3a459670e3a18742d
-- https://blog.f-secure.com/hunting-for-silenttrinity/
-- https://blog.talosintelligence.com/2020/02/building-bypass-with-msbuild.html
-- https://github.com/byt3bl33d3r/SILENTTRINITY
-- https://github.com/rvrsh3ll/MSBuildAPICaller
-- https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild?view%253Dvs-2019=&view=vs-2019
+- https://twitter.com/dottor_morte/status/1243134039772606464?s=20
+- https://riccardoancarani.github.io/2020-03-21-fooling-the-blue-team-abusing-insecure-elk/
+- https://github.com/FuzzySecurity/Fermion
+- https://www.fuzzysecurity.com/tutorials/29.html
+\
