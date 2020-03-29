@@ -2,7 +2,7 @@
 
 Recent research was published on on methods of selectively deleting messages in the Sysmon / Winlogbeat queue. The most technique which allows for selective message manipulation requires injecting the Winlogbeat process which can be detected with Sysmon event 7, CreateRemoteThread detected, like this:
 
-- `winlog.event_data.TargetImage:*winlogbeat.exe and event.action:"CreateRemoteThread detected (rule: CreateRemoteThread)"``
+- `winlog.event_data.TargetImage:*winlogbeat.exe and event.action:"CreateRemoteThread detected (rule: CreateRemoteThread)"`
 
 Changes to the Sysmon and Winlogbeat configuration files could also lead to classes of events being dropped. These can be detected with Sysmon event 11, File created;
 
