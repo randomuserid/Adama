@@ -24,6 +24,3 @@ SIEM rules for threat hunting & detection using Linux Auditbeat data
 | Linux System Owner / User Discovery                    | discovery           | T1033     | System Owner/User Discovery   |
 | Network Activity by a Telnet Process                   | command-and-control | T1065     | Uncommonly Used Port          |
 | Potential Defense Evasion via Time-stomping            | defense-evasion     | T1099     | Timestomp                     |
-| Potential Defense Evasion via Time-stomping            | defense-evasion     | T1099     | Timestomp                     |
-| Potential Defense Evasion via Time-stomping            | defense-evasion     | T1099     | Timestomp                     |
-| Potential Defense Evasion via Time-stomping            | defense-evasion     | T1099     | Timestomp                     |
