@@ -1,6 +1,6 @@
 ### Linux Signal Rules
 
-SIEM rules for threat hunting & detection using Linux Auditbeat data
+Elastic SIEM rules for threat hunting & detection using Linux Auditbeat data
 
 | Rule Name                                              | Tactic              | Technique |                               |
 |--------------------------------------------------------|---------------------|-----------|-------------------------------|
