@@ -1,4 +1,4 @@
-### Contents: this is a catalog of all known hunts compiled over the past 16 years.
+### Contents: this is a catalog of hunts compiled over the past 16 years.
 
 Authentication - searches for authentication data sets hunting for brute force, credential compromise, credentialed persistence and session fixation / hijacking
 
